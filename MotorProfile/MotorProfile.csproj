@@ -113,6 +113,15 @@
     <Content Include="dinushka\img\img_avatar.png" />
     <Content Include="dinushka\index.aspx" />
     <Content Include="dinushka\ownerprofile.aspx" />
+    <Content Include="duminth\Buying.aspx" />
+    <Content Include="duminth\Buying.css" />
+    <Content Include="duminth\Buying1.aspx" />
+    <Content Include="duminth\Buying1.css" />
+    <Content Include="duminth\Hiring.aspx" />
+    <Content Include="duminth\Hiring.css" />
+    <Content Include="duminth\Selling.aspx" />
+    <Content Include="duminth\Selling.css" />
+    <Content Include="duminth\style.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -182,6 +191,22 @@
     <Compile Include="dinushka\ownerprofile.aspx.designer.cs">
       <DependentUpon>ownerprofile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="duminth\Buying.aspx.cs">
+      <DependentUpon>Buying.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="duminth\Buying1.aspx.cs">
+      <DependentUpon>Buying1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="duminth\Hiring.aspx.cs">
+      <DependentUpon>Hiring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="duminth\Selling.aspx.cs">
+      <DependentUpon>Selling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="prashan\addcar.aspx.cs">
       <DependentUpon>addcar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,7 +240,6 @@
   <ItemGroup>
     <Folder Include="anurada\" />
     <Folder Include="dinushka\js\" />
-    <Folder Include="duminth\" />
     <Folder Include="malan\" />
   </ItemGroup>
   <PropertyGroup>

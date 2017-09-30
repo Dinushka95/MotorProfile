@@ -23,13 +23,13 @@ namespace MotorProfile
                 if (!LoginStatues) { Response.Redirect("index.aspx"); }
 
                 welcomemessage.Text = "WelCome "+currentuser;
-                //accountlabel.Text = currentuser;
+                accountnamemenu.Text = currentuser;
 
 
 
             }
 
-            
+
         }
 
 
