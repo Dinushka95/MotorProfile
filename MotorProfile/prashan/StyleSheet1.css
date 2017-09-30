@@ -1,0 +1,281 @@
+﻿body{font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: auto;
+}
+
+ul#nav{
+	margin-left: -40px;
+	float: left;
+	margin-top: -1px;
+	display: inline-block;
+}
+
+ul#nav li{
+	list-style: none;
+	margin-left: -5px;
+	display: inline-block;
+}
+
+ul#nav li a{
+	color: #FFFFFF;
+	display: inline-block;
+	padding: 9px;
+	width: 100px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition:0.5s;
+	transition: 0.5s;
+}
+
+ul#nav li a:hover{
+	background-color: #3176FF;
+	color: #8AE3FF;
+	box-shadow: 0px 0px 10px 1px #8AE3FF;
+}
+
+.navbar{
+	width: 100%;
+	height: 40px;
+	background-color: #518BFF;
+	box-shadow: 2px 2px 100px #888888;
+	position: fixed;
+}
+
+.navbut{
+	display: inline-block;
+	float: left;
+	height: 30px;
+	width: 120px;
+	padding-top: 8px;
+	padding-left: 0px;
+	color: #FFFFFF;
+}
+
+.navbut:hover{
+	display: inline-block;
+	float: left;
+	height: 30px;
+	width: 120px;
+	padding-top: 8px;
+	color: #03DBFF;
+}
+
+.navsearch{
+	background-color: #FFFFFF;
+	position: relative;
+	margin-top: 8px;
+	padding-right: 10px;
+	margin-right: 10px;
+	height: 24px;
+	display: inline-block;
+	float:right;
+	border-radius: 5px;
+	padding-left: 5px;
+}
+
+#stext{
+	margin-top: 3px;
+	width: 200px;
+	border: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	height: 16px;
+	outline: none;
+}
+
+#stext:focus{
+	margin-top: 3px;
+	border: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	height: 16px;
+	outline: none;
+	
+}
+
+#navlink{
+	padding-left: 5px;
+}
+
+
+.pageleft{
+	margin: 10px;
+	margin-top: 20px;
+	width: 240px;
+	float: left;
+	height: 300px;
+	border-radius: 10px;
+	vertical-align:top;
+	display: inline-block;
+	background-color: #9B9B9B;
+	box-shadow: 0px 0px 2px 2px #B7B7B7;
+	color: #f0f0f0;
+}
+
+.table1{
+	margin-top: 40px;
+	border: 0px;
+
+}
+.pageContent{
+    margin: 0 auto;
+	width: 900px;
+	height: 1000px;
+	vertical-align: top;
+	box-shadow: 0px 0px 15px 2px #B7B7B7;
+}
+.pageright{
+	margin: 10px;
+	margin-top: 20px;
+	width: 600px;
+	float: left;
+	height: 500px;
+	border-radius: 10px;
+	vertical-align:top;
+	display: inline-block;
+	box-shadow: 0px 0px 2px 2px #B7B7B7;
+	color: #B7B7B7;
+}
+
+.lefttd{
+	vertical-align: top;
+}
+
+.propic{
+	border: medium #508AFF solid;
+	position: relative;
+	width: 180px;
+	height: 180px;
+	border-radius: 5px;
+	background-color: #D7D7D7;
+}
+
+#name{
+	width: 220px;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	margin: 10px;
+	color: #FFFFFF;
+}
+
+#status{
+	width: 220px;
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+	margin: 10px;
+	color: #FFFFFF;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"]
+{
+    width:100%;;
+    display: inline-block;
+    vertical-align: middle;
+    height: 34px;
+    padding: 0 10px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    border: 2px solid #f0f0f0;
+    background-color: #fff;
+    color: #333;
+    border-radius: 2px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -webkit-transition: background-color 0.2s, border-color 0.2s;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+select:hover,
+textarea:hover,
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="date"]:hover
+{
+    border-color: #518BFF;
+}
+
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus
+{
+    border: 2px solid;
+    border-color: #508AFF;
+    color: #000;
+}
+
+/* button CSS*/
+.button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #518BFF;
+    border: none;
+    text-align: center;
+    color:white;
+    font-family: "Coda";
+    font-size: 15px;
+    padding: 5px;
+    width: 155px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button:hover{
+    background-color:#888888;
+}
+
+.abbutton{
+    padding-left:150px;
+    height:50px;
+    background-color:cornflowerblue;
+    width:750px;
+}
+
+.link{
+    color:white;
+    display:inline-block;
+    float:left;
+    height:35px;
+    width:100px;
+    padding-top:15px;
+}
+
+.linkadd{
+    color:white;
+    display:inline-block;
+    float:right;
+    height:30px;
+    width:180px;
+    margin-right:10px;
+    padding-top:10px;
+}
+
+.linkadd:hover{
+    color:white;
+    display:inline-block;
+    float:right;
+    height:30px;
+    width:180px;
+    margin-right:10px;
+    padding-top:10px;
+    background-color: #3176FF;
+	color: #8AE3FF;
+	box-shadow: 0px 0px 10px 1px #8AE3FF;
+}
