@@ -1,4 +1,4 @@
-﻿+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="MotorProfile.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="MotorProfile.index" %>
 
 <!DOCTYPE html>
 
@@ -44,7 +44,8 @@
 
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" id="accountnamemenu" data-toggle="dropdown"></a>
+                                <%--<a href="#" class="dropdown-toggle" id="accountnamemenu" data-toggle="dropdown"></a>--%>
+                                <asp:HyperLink ID="accountnamemenu" class="dropdown-toggle" data-toggle="dropdown" runat="server" >&nbsp;</asp:HyperLink>
                                 <ul class="dropdown-menu">
                                     <li><a href="#"><span class="glyphicon glyphicon-cog pull-left"></span>&nbsp; Account Settings </a></li>
                                     <li class="divider"></li>
@@ -188,22 +189,23 @@
 
             }
 
-            $(function hideaccountload() {
+            function hideaccountload() {
                 var sf_menu_sub = $('.dropdown');
 
                 sf_menu_sub.hide();
 
-            });
+            }
 
             function updateLabel(t) {
                 //document.getElementById('signupbutton').innerHTML = t;
                 //  $("#signupbutton").text(t);
                 $("#signupbutton").hide();
                 $("#loginbutton").hide();
-                hideaccountsucess()
+                hideaccountsucess();
                 $('#accountnamemenu').append('<span class="glyphicon glyphicon-user pull-left"></span>' + '&nbsp;' + t);
                 //  $("#accountnamemenu").text(t);
             }
+            function updateLabelqq() { $('#accountnamemenu').append('<span class="glyphicon glyphicon-user pull-left"></span>&nbsp; '); }
 
               function login() {
 

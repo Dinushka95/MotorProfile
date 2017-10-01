@@ -26,10 +26,10 @@ C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bi
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\Microsoft.ApplicationInsights.xml
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\obj\Debug\MotorProfile.csprojResolveAssemblyReference.cache
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\obj\Debug\MotorProfile.dll
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\obj\Debug\MotorProfile.pdb
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\MySql.Data.dll
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\MySql.Data.xml
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\MotorProfile.dll.config
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\ApplicationInsights.config
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\obj\Debug\MotorProfile.csprojResolveAssemblyReference.cache

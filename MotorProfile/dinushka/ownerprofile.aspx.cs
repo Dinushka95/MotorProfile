@@ -14,20 +14,21 @@ namespace MotorProfile
 
         protected void Page_Load(object sender, EventArgs e)
         {
-        //  currentuser = Session["user"].ToString();
             
+
             if (Session["username"] == null) { Response.Redirect("index.aspx"); }
-            else {
+            else
+            {
                 currentuser = Session["username"].ToString();
                 LoginStatues = (Boolean)Session["LogStatues"];
                 if (!LoginStatues) { Response.Redirect("index.aspx"); }
 
-                welcomemessage.Text = "WelCome "+currentuser;
+                welcomemessage.Text = "Welcome " + currentuser;
                 accountnamemenu.Text = currentuser;
-
-
-
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "accountloginiconupdate", "$(document).ready(function(){updateLabel();});", true);
             }
+
+
 
 
         }

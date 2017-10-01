@@ -12,12 +12,34 @@ namespace MotorProfile
 {
     public partial class index : System.Web.UI.Page
     {
+        String currentuser;
+        Boolean LoginStatues;
 
-        
 
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            if (Session["username"] != null)
+            {
+                currentuser = Session["username"].ToString();
+                LoginStatues = (Boolean)Session["LogStatues"];
+
+
+                // welcomemessage.Text = "Welcome " + currentuser;
+                accountnamemenu.Text = currentuser;
+                //ScriptManager.RegisterStartupScript(this, typeof(Page), "accountloginicone", "$(document).ready();", true);
+
+                string script = " $('#signupbutton').hide(); $('#loginbutton').hide(); hideaccountsucess(); ";
+                ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", script, true);
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "accountloginiconupdate", "$(document).ready(function(){updateLabelqq();});", true);
+            }
+            else
+            {
+                
+                    string script = " hideaccountload() ";
+                ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", script, true);
+            }
+
+
         }
 
         [WebMethod]

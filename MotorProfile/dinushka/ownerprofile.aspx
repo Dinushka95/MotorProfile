@@ -42,7 +42,7 @@
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
                                 <%--<a href="#" class="dropdown-toggle" id="accountnamemenu" data-toggle="dropdown"></a>--%>
-                                <asp:HyperLink ID="accountnamemenu" class="dropdown-toggle" data-toggle="dropdown" runat="server" ><span aria-hidden="true" class="glyphicon glyphicon-refresh"></span>&nbsp;</asp:HyperLink>
+                                <asp:HyperLink ID="accountnamemenu" class="dropdown-toggle" data-toggle="dropdown" runat="server" ></asp:HyperLink>
                                 <ul class="dropdown-menu">
                                     <li><a href="#"><span class="glyphicon glyphicon-cog pull-left"></span>&nbsp; Account Settings </a></li>
                                     <li class="divider"></li>
@@ -229,6 +229,7 @@
             </div>
             
         <script type="text/javascript">
+            function updateLabel() { $('#accountnamemenu').append('<span class="glyphicon glyphicon-user pull-left"></span>&nbsp; '); }
 
             
         </script>
