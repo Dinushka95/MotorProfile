@@ -250,6 +250,12 @@
     <Folder Include="dinushka\js\" />
     <Folder Include="malan\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MotorProfileLibrary\MotorProfileLibrary.csproj">
+      <Project>{167ad9b0-8b7e-4337-9d5d-4616e48e2832}</Project>
+      <Name>MotorProfileLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

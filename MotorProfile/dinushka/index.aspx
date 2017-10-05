@@ -45,7 +45,7 @@
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
                                 <%--<a href="#" class="dropdown-toggle" id="accountnamemenu" data-toggle="dropdown"></a>--%>
-                                <asp:HyperLink ID="accountnamemenu" class="dropdown-toggle" data-toggle="dropdown" runat="server" >&nbsp;</asp:HyperLink>
+                                <asp:HyperLink ID="accountnamemenu" class="dropdown-toggle" data-toggle="dropdown" runat="server">&nbsp;</asp:HyperLink>
                                 <ul class="dropdown-menu">
                                     <li><a href="#"><span class="glyphicon glyphicon-cog pull-left"></span>&nbsp; Account Settings </a></li>
                                     <li class="divider"></li>
@@ -207,26 +207,26 @@
             }
             function updateLabelqq() { $('#accountnamemenu').append('<span class="glyphicon glyphicon-user pull-left"></span>&nbsp; '); }
 
-              function login() {
+            function login() {
 
                 var email = document.getElementById('<%=TextBox1.ClientID %>').value;
-                var password = document.getElementById('<%=TextBox2.ClientID %>').value;
+                  var password = document.getElementById('<%=TextBox2.ClientID %>').value;
 
 
-                PageMethods.LoginUser(email, password, onSucess, onError);
+                  PageMethods.LoginUser(email, password, onSucess, onError);
 
 
-                function onSucess(result) {
-                    alert(result);
-                    $('#loginModal').modal('hide');
-                    updateLabel(email);
-                }
+                  function onSucess(result) {
+                      alert(result);
+                      $('#loginModal').modal('hide');
+                      updateLabel(email);
+                  }
 
 
-                function onError(result) {
-                    alert('Cannot process your request at the moment, please try later.');
-                }
-            }
+                  function onError(result) {
+                      alert('Cannot process your request at the moment, please try later.');
+                  }
+              }
 
         </script>
 

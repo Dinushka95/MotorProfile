@@ -33,3 +33,7 @@ C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bi
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\MotorProfile.dll.config
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\ApplicationInsights.config
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\obj\Debug\MotorProfile.csprojResolveAssemblyReference.cache
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\MotorProfileLibrary.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\Dapper.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\MotorProfileLibrary.pdb
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfile\bin\Dapper.xml

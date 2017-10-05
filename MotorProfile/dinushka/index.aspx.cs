@@ -65,7 +65,8 @@ namespace MotorProfile
                 try
                 {
                     Console.WriteLine("connect to db");
-                    MySqlConnection connection = new MySqlConnection("Database=mp_schema;Data Source=localhost;User Id=root;Password=root");
+                    //MySqlConnection connection = new MySqlConnection("Database=mp_schema;Data Source=localhost;User Id=root;Password=root");
+                    MySqlConnection connection = new MySqlConnection("Database=mp_schema;Data Source=motorprofile.cht0bvbob1wj.us-west-2.rds.amazonaws.com;User Id=motorprofile;Password=motorroot");
                     connection.Open();
                     MySqlCommand command = connection.CreateCommand();
 
