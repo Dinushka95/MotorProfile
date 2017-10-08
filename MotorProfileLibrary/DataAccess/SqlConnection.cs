@@ -11,30 +11,77 @@ using System.Configuration;
 
 namespace MotorProfileLibrary.DataAccess
 {
-    public  class SqlConnection : IDataConnection
+    public  class SqlConnection:IDataConnection
     {
+        private string myKey = "MotorProfileWebSite";
 
-        public UserModel CreateUser(UserModel model)
+        public OwnerModel CreateOwner(OwnerModel model)
+        {
+                    
+            using (IDbConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["MP_DB_Conn"].ConnectionString))
+            {
+                var p = new DynamicParameters();
+                p.Add("name", model.Name);
+                p.Add("age", model.Age);
+                p.Add("location", model.Location);
+                p.Add("gender", model.Gender);
+                p.Add("email", model.Email);
+                p.Add("jdate", model.Jdate);
+                p.Add("lsdate", model.Lsdate);
+                p.Add("description", model.Description);
+                p.Add("username", model.Username);
+                p.Add("password",encryptionNow(model.Password) );
+
+                connection.Execute("mp_schema.CreateOwner", p, commandType: CommandType.StoredProcedure);
+                return model;
+            }
+       
+    }
+
+        public bool CheckLogin(OwnerModel model)
         {
             using (IDbConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["MP_DB_Conn"].ConnectionString))
             {
                 var p = new DynamicParameters();
-                p.Add("username",model.Username);
-                p.Add("password",model.Password);
+                p.Add("username", model.Username);
+                p.Add("password", encryptionNow(model.Password));
 
-                connection.Execute("mp_schema.CreateUser", p, commandType: CommandType.StoredProcedure);
-                return model;
+                p.Add("id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
+
+                connection.Execute("LoginOwner", p, commandType: CommandType.StoredProcedure);
+                try
+                {
+                    model.Id = p.Get<int>("id");
+                    return true;
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
             }
         }
 
-        public UserModel GetUser(UserModel model)
+        public List<OwnerModel> GetOwner(OwnerModel model)
         {
-            throw new NotImplementedException();
+            using (IDbConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["MP_DB_Conn"].ConnectionString))
+            {   
+                return connection.Query<OwnerModel>("procuer").ToList();
+            }
         }
 
         public VehicleModel GetVehicle(VehicleModel model)
         {
             throw new NotImplementedException();
+        }
+
+        public string decryptionNow(string d)
+        {
+            return Encryption.AESThenHMAC.CreateMD5(d);
+        }
+
+        public string encryptionNow(string e)
+        {
+            return Encryption.AESThenHMAC.CreateMD5(e) ;
         }
     }
 }

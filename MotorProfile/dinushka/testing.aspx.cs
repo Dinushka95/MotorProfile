@@ -20,8 +20,10 @@ namespace MotorProfile
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            UserModel model = new UserModel("dx1", "dx");
-            new SqlConnection().CreateUser(model);
+
+
+            string script = "alert(\"GGGGGGGGGGGGGGGGh!\");";
+            ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", script, true);
         }
     }
 }

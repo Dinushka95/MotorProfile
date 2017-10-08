@@ -33,9 +33,7 @@ namespace MotorProfile
 
         private void loadData()
         {
-            int data_ownerid;
-
-
+            
             MySqlConnection connection = new MySqlConnection("Database=mp_schema;Data Source=motorprofile.cht0bvbob1wj.us-west-2.rds.amazonaws.com;User Id=motorprofile;Password=motorroot");
             connection.Open();
             MySqlCommand command = connection.CreateCommand();
@@ -52,9 +50,6 @@ namespace MotorProfile
                 data_vehicleid = reader.GetInt16(2);
                 data_ownit = reader.GetInt16(3);
                 count++;
-
-                
-
 
             }
             reader.Close();

@@ -112,6 +112,7 @@
     <Content Include="dinushka\fw\jquery\jquery-3.2.1.min.js" />
     <Content Include="dinushka\img\img_avatar.png" />
     <Content Include="dinushka\index.aspx" />
+    <Content Include="dinushka\indexAfterlogin.aspx" />
     <Content Include="dinushka\ownerprofile.aspx" />
     <Content Include="duminth\2015_koenigsegg_agera_hh-HD.jpg" />
     <Content Include="duminth\2016-Koenigsegg-Agera-RS-2.jpg" />
@@ -185,6 +186,13 @@
     </Compile>
     <Compile Include="dinushka\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dinushka\indexAfterlogin.aspx.cs">
+      <DependentUpon>indexAfterlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dinushka\indexAfterlogin.aspx.designer.cs">
+      <DependentUpon>indexAfterlogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="dinushka\ownerprofile.aspx.cs">
       <DependentUpon>ownerprofile.aspx</DependentUpon>
