@@ -20,36 +20,53 @@
     <form id="form1" runat="server">
     <div>
     
-        <!-- Navigation Bar -->
+   <!-- Navigation Bar -->
         <div>
             <nav class="navbar navbar-custom">
                 <div class="container-fluid">
 
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">MotorProfile.Net</a>
-                    </div>
-
                     <ul class="nav navbar-nav">
-                        <li><a href="index.aspx"><span class="flaticon-home-icon-silhouette"></span> Home</a></li>
-                        <li><a href="ownerprofile.aspx"><span class="flaticon-man-user"></span> Profile</a></li>
-                        <li><a href="ratingsys.aspx"><span class="glyphicon glyphicon-ok-circle"></span> Vehicle Rating</a></li>
-                        <li><a href="#"><span class="flaticon-sports-car"></span> Buying & Selling</a></li>
-                        <li><a href="#"><span class="flaticon-sports-car"></span> Hiring / Renting</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Vehicle Parts</a></li>
-                        <li><a href="#"><span class="flaticon-black-back-closed-envelope-shape"></span>Messages</a></li>
+                        <li><a href="index.aspx"><span class="flaticon-home-icon-silhouette"></span>&nbsp;Home</a></li>
+                        <li><a href="ownerprofile.aspx"><span class="flaticon-man-user"></span>&nbsp;Profile</a></li>
+                        <li><a href="ratingsys.aspx"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Vehicle Rating</a></li>
+                        <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Vehicles</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Buying & Selling</a></li>
+                        <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Hiring / Renting</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Vehicle Parts</a></li>
+                        <li><a href="#"><span class="flaticon-black-back-closed-envelope-shape"></span>&nbsp;Community Chat</a></li>
                     </ul>
-
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a id="signupbutton" href="#" onclick="signupModal()"><span class="glyphicon glyphicon-user"  ></span>  Sign Up</a></li>
-                        <li><a id="loginbutton"  href="#" onclick="openModal()"  ><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
-                        
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <%--<a href="#" class="dropdown-toggle" id="accountnamemenu" data-toggle="dropdown"></a>--%>
+                                <asp:HyperLink ID="accountnamemenu" class="dropdown-toggle" Text="" data-toggle="dropdown" runat="server">&nbsp;</asp:HyperLink>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-cog pull-left"></span>&nbsp; Account Settings </a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-stats pull-left"></span>&nbsp;User stats </a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-log-out pull-left"></span>&nbsp; Sign Out </a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </ul>
-
                 </div>
             </nav>
         </div>
-
         <!------------------------------------------------------------------------------------------------------------------------>
+              
+                  <div class="row center-block ">
+  
+          <div class="col-lg-6 col-lg-offset-3 text-center">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button">Search</button>
+              </span>
+            </div>
+          </div>
+        
+        </div> 
 
 
         <div class="container-fluid ">

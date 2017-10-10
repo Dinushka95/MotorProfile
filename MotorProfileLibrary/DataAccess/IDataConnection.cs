@@ -9,10 +9,14 @@ namespace MotorProfileLibrary.DataAccess
 {
     public interface IDataConnection
     {
-        VehicleModel GetVehicle(VehicleModel model);
 
-        UserModel CreateUser(UserModel model);
+        OwnerModel CreateOwner(OwnerModel model);
 
-        UserModel GetUser(UserModel model);
+        OwnerModel GetOwner(int key);
+
+        bool CheckLogin(OwnerModel model);
+
+        VehicleModel GetVehicleIOwn(string username);
+
     }
 }

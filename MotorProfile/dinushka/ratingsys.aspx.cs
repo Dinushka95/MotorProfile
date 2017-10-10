@@ -9,9 +9,25 @@ namespace MotorProfile
 {
     public partial class ratingsys : System.Web.UI.Page
     {
+        String currentuser;
+        Boolean LoginStatues;
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((Session["username"] != null))
+            {
+                currentuser = Session["username"].ToString();
+                LoginStatues = (Boolean)Session["LogStatues"];
+
+                accountnamemenu.Text = currentuser;
+                //LoadPage();
+            }
+            else
+            {
+                Response.Redirect("index.aspx");
+
+            }
 
         }
     }
-}
+    }

@@ -25,8 +25,6 @@
             <nav class="navbar navbar-custom">
                 <div class="container-fluid">
 
-
-
                     <ul class="nav navbar-nav">
                         <li><a href="index.aspx"><span class="flaticon-home-icon-silhouette"></span>&nbsp;Home</a></li>
                         <li><a href="ownerprofile.aspx"><span class="flaticon-man-user"></span>&nbsp;Profile</a></li>
@@ -42,19 +40,7 @@
                         <li><a id="signupbutton" href="#" onclick="signupModal()"><span class="glyphicon glyphicon-user"></span>&nbsp; Sign Up</a></li>
                         <li><a id="loginbutton" href="#" onclick="openModal()"><span class="glyphicon glyphicon-log-in"></span>&nbsp; Login</a></li>
 
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <%--<a href="#" class="dropdown-toggle" id="accountnamemenu" data-toggle="dropdown"></a>--%>
-                                <asp:HyperLink ID="accountnamemenu" class="dropdown-toggle" data-toggle="dropdown" runat="server">&nbsp;</asp:HyperLink>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#"><span class="glyphicon glyphicon-cog pull-left"></span>&nbsp; Account Settings </a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-stats pull-left"></span>&nbsp;User stats </a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-log-out pull-left"></span>&nbsp; Sign Out </a></li>
-                                </ul>
-                            </li>
-                        </ul>
+
 
                     </ul>
 
@@ -79,7 +65,7 @@
 
                     <div class="modal-body">
                         <div class="form-group">
-                            <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+
                             <label><b>Username</b></label>
                             <asp:TextBox ID="TextBox1" class="form-control" runat="server" type="text" placeholder="Enter Username" name="uname"></asp:TextBox>
 
@@ -89,7 +75,7 @@
                             <asp:CheckBox ID="CheckBox1" runat="server" type="checkbox" />
                             Remember me
                            
-                            <asp:Button ID="Button3login" type="button" class="form-control btn btn-primary" runat="server" Text="Login" OnClientClick="login(); return false;" />
+                            <asp:Button ID="Button3login" type="button" class="form-control btn btn-primary" runat="server" Text="Login" OnClick="Button3login_Click" />
 
                         </div>
                     </div>
@@ -149,7 +135,7 @@
                             <br />
 
 
-                            <asp:Button ID="Button5" class="form-control btn btn-primary" runat="server" OnClick="Button5_Click" Text="Signup" />
+                            <asp:Button ID="Buttonsignup" class="form-control btn btn-primary" runat="server" OnClick="Buttonsignup_Click" Text="Signup" />
                         </div>
                     </div>
 
@@ -176,66 +162,20 @@
 
             function openModal() {
                 $('#loginModal').modal('show');
-            }
+            };
 
             function signupModal() {
                 $('#signupModal').modal('show');
+            };
+
+            function LdropdHide() {
+                document.getElementById('dropdown').hidden;
             }
 
-            function hideaccountsucess() {
-                var sf_menu_sub = $('.dropdown');
 
-                sf_menu_sub.show();
-
-            }
-
-            function hideaccountload() {
-                var sf_menu_sub = $('.dropdown');
-
-                sf_menu_sub.hide();
-
-            }
-
-            function updateLabel(t) {
-                //document.getElementById('signupbutton').innerHTML = t;
-                //  $("#signupbutton").text(t);
-                $("#signupbutton").hide();
-                $("#loginbutton").hide();
-                hideaccountsucess();
-                $('#accountnamemenu').append('<span class="glyphicon glyphicon-user pull-left"></span>' + '&nbsp;' + t);
-                //  $("#accountnamemenu").text(t);
-            }
-            function updateLabelqq() { $('#accountnamemenu').append('<span class="glyphicon glyphicon-user pull-left"></span>&nbsp; '); }
-
-            function login() {
-
-                var email = document.getElementById('<%=TextBox1.ClientID %>').value;
-                  var password = document.getElementById('<%=TextBox2.ClientID %>').value;
-
-
-                  PageMethods.LoginUser(email, password, onSucess, onError);
-
-
-                  function onSucess(result) {
-                      alert(result);
-                      $('#loginModal').modal('hide');
-                      updateLabel(email);
-                  }
-
-
-                  function onError(result) {
-                      alert('Cannot process your request at the moment, please try later.');
-                  }
-              }
 
         </script>
 
-
-
-
-
     </form>
-
-
 </body>
 </html>
