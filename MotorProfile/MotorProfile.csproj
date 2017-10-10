@@ -111,7 +111,17 @@
     <Content Include="dinushka\fw\jquery\jquery-3.2.1.js" />
     <Content Include="dinushka\fw\jquery\jquery-3.2.1.min.js" />
     <Content Include="dinushka\img\audisq7.jpg" />
+    <Content Include="dinushka\img\banner_cars_2016.jpg" />
     <Content Include="dinushka\img\carinmgmain.jpg" />
+    <Content Include="dinushka\img\CR-Cars-AH-Highway-Traffic-11-15.jpg" />
+    <Content Include="dinushka\img\CR-Cars-Hero-2017-Ford-F-250-farm-09-17-Crop.jpg" />
+    <Content Include="dinushka\img\CR-Cars-Hero-2017-Honda-CR-V-coast-07-17-Crop.jpg" />
+    <Content Include="dinushka\img\CR-Cars-Hero-2018-Cadillac-CT6-CarPlay-10-17-Crop.jpg" />
+    <Content Include="dinushka\img\CR-Cars-Hero-2018-Hyundai-Elantra-GTs-09-17-Crop.jpg" />
+    <Content Include="dinushka\img\CR-Cars-Hero-2018-Subaru-Forester-snow-09-17-Crop.jpg" />
+    <Content Include="dinushka\img\CR-Cars-Hero-Baby-on-Board-08-17-Crop.jpg" />
+    <Content Include="dinushka\img\CR-Cars-Hero-Car-Battery-Installation-09-17-Crop.jpg" />
+    <Content Include="dinushka\img\CR-Cars-Inline-Talking-Cars-124-10-17.jpg" />
     <Content Include="dinushka\img\hyhonda.jpg" />
     <Content Include="dinushka\img\hyundaii20 .jpg" />
     <Content Include="dinushka\img\img_avatar.png" />
