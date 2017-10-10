@@ -15,7 +15,7 @@ namespace Encryption
     public static class AESThenHMAC
     {
         private static readonly RandomNumberGenerator Random = RandomNumberGenerator.Create();
-        
+
         //Preconfigured Encryption Parameters
         public static readonly int BlockBitSize = 128;
         public static readonly int KeyBitSize = 256;
@@ -278,7 +278,7 @@ namespace Encryption
                 //Compare Tag with constant time comparison
                 var compare = 0;
                 for (var i = 0; i < sentTag.Length; i++)
-                    compare |= sentTag[i] ^ calcTag[i]; 
+                    compare |= sentTag[i] ^ calcTag[i];
 
                 //if message doesn't authenticate return null
                 if (compare != 0)
@@ -334,13 +334,13 @@ namespace Encryption
         /// </remarks>
         public static byte[] SimpleEncryptWithPassword(byte[] secretMessage, string password, byte[] nonSecretPayload = null)
         {
-            nonSecretPayload = nonSecretPayload ?? new byte[] {};
+            nonSecretPayload = nonSecretPayload ?? new byte[] { };
 
             //User Error Checks
             if (string.IsNullOrWhiteSpace(password) || password.Length < MinPasswordLength)
                 throw new ArgumentException(String.Format("Must have a password of at least {0} characters!", MinPasswordLength), "password");
 
-            if (secretMessage == null || secretMessage.Length ==0)
+            if (secretMessage == null || secretMessage.Length == 0)
                 throw new ArgumentException("Secret Message Required!", "secretMessage");
 
             var payload = new byte[((SaltBitSize / 8) * 2) + nonSecretPayload.Length];

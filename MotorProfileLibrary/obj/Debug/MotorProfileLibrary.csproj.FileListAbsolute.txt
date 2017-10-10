@@ -6,4 +6,3 @@ C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileLib
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileLibrary\bin\Debug\MySql.Data.xml
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileLibrary\obj\Debug\MotorProfileLibrary.dll
 C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileLibrary\obj\Debug\MotorProfileLibrary.pdb
-C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileLibrary\obj\Debug\MotorProfileLibrary.csprojResolveAssemblyReference.cache

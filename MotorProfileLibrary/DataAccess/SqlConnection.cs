@@ -11,13 +11,13 @@ using System.Configuration;
 
 namespace MotorProfileLibrary.DataAccess
 {
-    public  class SqlConnection:IDataConnection
+    public class SqlConnection : IDataConnection
     {
         private string myKey = "MotorProfileWebSite";
 
         public OwnerModel CreateOwner(OwnerModel model)
         {
-                    
+
             using (IDbConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["MP_DB_Conn"].ConnectionString))
             {
                 var p = new DynamicParameters();
@@ -30,13 +30,13 @@ namespace MotorProfileLibrary.DataAccess
                 p.Add("lsdate", model.Lsdate);
                 p.Add("description", model.Description);
                 p.Add("username", model.Username);
-                p.Add("password",encryptionNow(model.Password) );
+                p.Add("password", encryptionNow(model.Password));
 
                 connection.Execute("mp_schema.CreateOwner", p, commandType: CommandType.StoredProcedure);
                 return model;
             }
-       
-    }
+
+        }
 
         public bool CheckLogin(OwnerModel model)
         {
@@ -73,7 +73,7 @@ namespace MotorProfileLibrary.DataAccess
                 model.Name = p.Get<string>("name1");
                 System.Diagnostics.Debug.WriteLine(model.Name);
                 return model;
-                   
+
             }
         }
 
@@ -84,7 +84,7 @@ namespace MotorProfileLibrary.DataAccess
 
         public string encryptionNow(string e)
         {
-            return Encryption.AESThenHMAC.CreateMD5(e) ;
+            return Encryption.AESThenHMAC.CreateMD5(e);
         }
 
         public VehicleModel GetVehicleIOwn(string username)

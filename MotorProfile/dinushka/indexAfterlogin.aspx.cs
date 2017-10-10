@@ -14,7 +14,7 @@ namespace MotorProfile.dinushka
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if ((Session["username"] != null) )
+            if ((Session["username"] != null))
             {
                 currentuser = Session["username"].ToString();
                 LoginStatues = (Boolean)Session["LogStatues"];

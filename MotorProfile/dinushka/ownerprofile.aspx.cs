@@ -32,7 +32,8 @@ namespace MotorProfile
 
         }
 
-        public void LoadPage() {
+        public void LoadPage()
+        {
 
             MySqlConnection connection = new MySqlConnection("Database=mp_schema;Data Source=Database=mp_schema;Data Source=motorprofile.cht0bvbob1wj.us-west-2.rds.amazonaws.com;User Id=motorprofile;Password=motorroot");
             connection.Open();
@@ -41,10 +42,10 @@ namespace MotorProfile
             command.CommandText = "SELECT `myvehicle_table`.`idowner_myvehicle_tablecol`,`vehicle_table`.`id_vehicle_table`,`vehicle_table`.`model_vehicle_tablecol`,`vehicle_table`.`picture_vehicle_tablecol`,`vehicle_table`.`name_vehicle_tablecol`,`vehicle_table`.`regnumber_vehicle_tablecol`, `vehicle_table`.`regdate_vehicle_tablecol`,`vehicle_table`.`country_vehicle_tablecol`,`vehicle_table`.`videolink_vehicle_tablecol`, `myvehicle_table`.`soldornot_myvehicle_tablecol` FROM mp_schema.myvehicle_table LEFT JOIN mp_schema.vehicle_table on idvehicle_myvehicle_tablecol = id_vehicle_table group by id_vehicle_table having idowner_myvehicle_tablecol = ( SELECT id_owner_table FROM mp_schema.owner_table where username_owner_tablecol ='" + currentuser + "'); ";
             MySqlDataReader reader = command.ExecuteReader();
 
-            List<VehicleModel> iownmodels = new List <VehicleModel>();
+            List<VehicleModel> iownmodels = new List<VehicleModel>();
             List<VehicleModel> iownedmodels = new List<VehicleModel>();
             while (reader.Read())
-            {   
+            {
                 VehicleModel model = new VehicleModel();
                 model.Id = reader.GetInt32(1);
                 model.Model = reader.GetString(2);
@@ -56,24 +57,24 @@ namespace MotorProfile
                 model.Videolink = reader.GetString(8);
                 model.Soldornot = reader.GetBoolean(9);
                 if (reader.GetBoolean(9))
-                { iownmodels.Add(model);}
+                { iownmodels.Add(model); }
                 else
                 { iownedmodels.Add(model); }
-                
+
 
                 System.Diagnostics.Debug.WriteLine(model);
 
             }
-            
+
             reader.Close();
             connection.Close();
             string myhtml = "";
 
-            welcomemessage.Text ="Welcome "+ currentuser;
+            welcomemessage.Text = "Welcome " + currentuser;
 
             foreach (VehicleModel x in iownmodels)
             {
-                myhtml +=$"<div class=\"col-md-4\"><div class=\"thumbnail\"><img alt=\"300x200\" src=\"{x.Picture}\"><div class=\"caption\"><h3>{x.Model}</h3><p>{x.Name + x.Regnumber}</p></div></div> </div> ";
+                myhtml += $"<div class=\"col-md-4\"><div class=\"thumbnail\"><img alt=\"300x200\" src=\"{x.Picture}\"><div class=\"caption\"><h3>{x.Model}</h3><p>{x.Name + x.Regnumber}</p></div></div> </div> ";
             }
             myowncar.InnerHtml = myhtml;
 
@@ -89,6 +90,6 @@ namespace MotorProfile
             //myowncar.InnerHtml = "<div class=\"col-md-4\"><div class=\"thumbnail\"><img alt=\"300x200\" src=\"img/sports.jpg\"><div class=\"caption\"><h3>Rover</h3><p>CAR DETAILS</p></div></div> </div>";
 
         }
-        
+
     }
 }
