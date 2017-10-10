@@ -20,7 +20,7 @@
 <body>
     <form id="form1" runat="server">
 
-        <!-- Navigation Bar -->
+                <!-- Navigation Bar -->
         <div>
             <nav class="navbar navbar-custom">
                 <div class="container-fluid">
@@ -35,14 +35,11 @@
                         <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Vehicle Parts</a></li>
                         <li><a href="#"><span class="flaticon-black-back-closed-envelope-shape"></span>&nbsp;Community Chat</a></li>
                     </ul>
-
                     <ul class="nav navbar-nav navbar-right">
-                       
-
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
                                 <%--<a href="#" class="dropdown-toggle" id="accountnamemenu" data-toggle="dropdown"></a>--%>
-                                <asp:HyperLink ID="accountnamemenu" class="dropdown-toggle" data-toggle="dropdown" runat="server" ></asp:HyperLink>
+                                <asp:HyperLink ID="accountnamemenu" class="dropdown-toggle" Text="" data-toggle="dropdown" runat="server">&nbsp;</asp:HyperLink>
                                 <ul class="dropdown-menu">
                                     <li><a href="#"><span class="glyphicon glyphicon-cog pull-left"></span>&nbsp; Account Settings </a></li>
                                     <li class="divider"></li>
@@ -52,17 +49,11 @@
                                 </ul>
                             </li>
                         </ul>
-
                     </ul>
-
                 </div>
             </nav>
         </div>
         <!------------------------------------------------------------------------------------------------------------------------>
-
-        <!-- Modal -->
-
-        <!-- owner modal -->
 
 
 
@@ -106,7 +97,7 @@
                         </div>
 
                     </div>
-
+                    
 
                     <ul class="list-group">
                         <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i>
@@ -148,9 +139,9 @@
                         <div class="panel-heading" contenteditable="false">Vehicles I Own</div>
                         <div class="panel-body">
                             <div class="row">
-
-
-                                <div class="col-md-4">
+                                
+                                <div id ="myowncar" runat="server"><%--add data from server --%>
+ <%--                                    <div class="col-md-4">
                                     <div class="thumbnail">
                                         <img alt="300x200" src="img/sports.jpg">
                                         <div class="caption">
@@ -158,27 +149,11 @@
                                             <p>CAR DETAILS</p>
                                         </div>
                                     </div>
+                                </div>--%>
                                 </div>
+                                
 
-                                <div class="col-md-4">
-                                    <div class="thumbnail">
-                                        <img alt="300x200" src="img/sports.jpg">
-                                        <div class="caption">
-                                            <h3>Maruti</h3>
-                                            <p>CAR DETAILs </p>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="col-md-4">
-                                    <div class="thumbnail">
-                                        <img alt="300x200" src="img/sports.jpg">
-                                        <div class="caption">
-                                            <h3>Nissan</h3>
-                                            <p>CAR DETAILS</p>
-                                        </div>
-                                    </div>
-                                </div>
 
                             </div>
                         </div>
@@ -190,7 +165,8 @@
                         <div class="panel-body">
                             <div class="row">
 
-                                <div class="col-md-4">
+                                <div id ="myownedcar" runat="server">
+<%--                                <div class="col-md-4">
                                     <div class="thumbnail">
                                         <img alt="300x200" src="img/sports.jpg">
                                         <div class="caption">
@@ -198,27 +174,9 @@
                                             <p>CAR DETAILS</p>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <div class="thumbnail">
-                                        <img alt="300x200" src="img/sports.jpg">
-                                        <div class="caption">
-                                            <h3>Maruti</h3>
-                                            <p>CAR DETAILS</p>
-                                        </div>
+                                </div>--%>
                                     </div>
-                                </div>
 
-                                <div class="col-md-4">
-                                    <div class="thumbnail">
-                                        <img alt="300x200" src="img/sports.jpg">
-                                        <div class="caption">
-                                            <h3>Nissan</h3>
-                                            <p>CAR DETAILS</p>
-                                        </div>
-                                    </div>
-                                </div>
 
                             </div>
                         </div>
@@ -228,11 +186,7 @@
 
             </div>
             
-        <script type="text/javascript">
-            function updateLabel() { $('#accountnamemenu').append('<span class="glyphicon glyphicon-user pull-left"></span>&nbsp; '); }
-
-            
-        </script>
+        
     </form>
 </body>
 </html>
