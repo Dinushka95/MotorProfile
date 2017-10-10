@@ -30,17 +30,25 @@ namespace MotorProfile
 
             }
 
+<<<<<<< HEAD
         }
 
         public void LoadPage() {
 
             MySqlConnection connection = new MySqlConnection("Database=mp_schema;Data Source=Database=mp_schema;Data Source=motorprofile.cht0bvbob1wj.us-west-2.rds.amazonaws.com;User Id=motorprofile;Password=motorroot");
+=======
+        private void loadData()
+        {
+            
+            MySqlConnection connection = new MySqlConnection("Database=mp_schema;Data Source=motorprofile.cht0bvbob1wj.us-west-2.rds.amazonaws.com;User Id=motorprofile;Password=motorroot");
+>>>>>>> 77ecac6671e13534af60f49f21b1e545dc18ae00
             connection.Open();
             MySqlCommand command = connection.CreateCommand();
 
             command.CommandText = "SELECT `myvehicle_table`.`idowner_myvehicle_tablecol`,`vehicle_table`.`id_vehicle_table`,`vehicle_table`.`model_vehicle_tablecol`,`vehicle_table`.`picture_vehicle_tablecol`,`vehicle_table`.`name_vehicle_tablecol`,`vehicle_table`.`regnumber_vehicle_tablecol`, `vehicle_table`.`regdate_vehicle_tablecol`,`vehicle_table`.`country_vehicle_tablecol`,`vehicle_table`.`videolink_vehicle_tablecol`, `myvehicle_table`.`soldornot_myvehicle_tablecol` FROM mp_schema.myvehicle_table LEFT JOIN mp_schema.vehicle_table on idvehicle_myvehicle_tablecol = id_vehicle_table group by id_vehicle_table having idowner_myvehicle_tablecol = ( SELECT id_owner_table FROM mp_schema.owner_table where username_owner_tablecol ='" + currentuser + "'); ";
             MySqlDataReader reader = command.ExecuteReader();
 
+<<<<<<< HEAD
             List<VehicleModel> iownmodels = new List <VehicleModel>();
             List<VehicleModel> iownedmodels = new List<VehicleModel>();
             while (reader.Read())
@@ -63,6 +71,8 @@ namespace MotorProfile
 
                 System.Diagnostics.Debug.WriteLine(model);
 
+=======
+>>>>>>> 77ecac6671e13534af60f49f21b1e545dc18ae00
             }
             
             reader.Close();

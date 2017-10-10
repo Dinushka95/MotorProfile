@@ -61,6 +61,7 @@ namespace MotorProfileLibrary.DataAccess
             }
         }
 
+<<<<<<< HEAD
         public OwnerModel GetOwner(int key)
         {
             using (IDbConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["MP_DB_Conn"].ConnectionString))
@@ -80,6 +81,14 @@ namespace MotorProfileLibrary.DataAccess
         public string decryptionNow(string d)
         {
             return Encryption.AESThenHMAC.CreateMD5(d);
+=======
+        public List<OwnerModel> GetOwner(OwnerModel model)
+        {
+            using (IDbConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["MP_DB_Conn"].ConnectionString))
+            {   
+                return connection.Query<OwnerModel>("procuer").ToList();
+            }
+>>>>>>> 77ecac6671e13534af60f49f21b1e545dc18ae00
         }
 
         public string encryptionNow(string e)
@@ -91,6 +100,16 @@ namespace MotorProfileLibrary.DataAccess
         {
 
             return null;
+        }
+
+        public string decryptionNow(string d)
+        {
+            return Encryption.AESThenHMAC.CreateMD5(d);
+        }
+
+        public string encryptionNow(string e)
+        {
+            return Encryption.AESThenHMAC.CreateMD5(e) ;
         }
     }
 }

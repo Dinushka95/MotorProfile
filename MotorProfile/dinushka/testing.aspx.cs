@@ -21,6 +21,12 @@ namespace MotorProfile
         protected void Button1_Click(object sender, EventArgs e)
         {
 
+<<<<<<< HEAD
+=======
+
+            string script = "alert(\"GGGGGGGGGGGGGGGGh!\");";
+            ScriptManager.RegisterStartupScript(this, GetType(), "ServerControlScript", script, true);
+>>>>>>> 77ecac6671e13534af60f49f21b1e545dc18ae00
         }
     }
 }
