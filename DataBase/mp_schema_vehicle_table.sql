@@ -34,7 +34,7 @@ CREATE TABLE `vehicle_table` (
   `country_vehicle_tablecol` varchar(45) DEFAULT NULL,
   `videolink_vehicle_tablecol` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_vehicle_table`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,7 +43,7 @@ CREATE TABLE `vehicle_table` (
 
 LOCK TABLES `vehicle_table` WRITE;
 /*!40000 ALTER TABLE `vehicle_table` DISABLE KEYS */;
-INSERT INTO `vehicle_table` VALUES (1,'toyota',NULL,'car','gq 3423',NULL,'japan',NULL),(2,'nissan',NULL,'van','ww 2345',NULL,'japan',NULL),(3,'jaguar',NULL,'jag car','ee 2324',NULL,'japan',NULL),(4,'maruti',NULL,'indi car','rr3235',NULL,'japan',NULL);
+INSERT INTO `vehicle_table` VALUES (1,'toyota','\\dinushka\\img\\audisq7.jpg','car','gq 3423','10/8/2017','japan','no'),(2,'nissan','\\dinushka\\img\\carinmgmain.jpg','van','ww 2345','10/8/2017','japan','no'),(3,'jaguar','\\dinushka\\img\\hyhonda.jpg','jag car','ee 2324','10/8/2017','japan','no'),(4,'maruti','\\dinushka\\img\\hyundaii20 .jpg','indi car','rr3235','10/8/2017','japan','no');
 /*!40000 ALTER TABLE `vehicle_table` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -56,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-05 16:32:57
+-- Dump completed on 2017-10-11  5:14:58

@@ -39,7 +39,7 @@ CREATE TABLE `myvehicle_table` (
 
 LOCK TABLES `myvehicle_table` WRITE;
 /*!40000 ALTER TABLE `myvehicle_table` DISABLE KEYS */;
-INSERT INTO `myvehicle_table` VALUES (1,1,1,0),(2,1,2,1),(3,1,3,0),(4,6,1,0),(5,6,2,1);
+INSERT INTO `myvehicle_table` VALUES (1,18,1,0),(2,18,2,1),(3,18,3,0),(4,6,1,0),(5,6,2,1);
 /*!40000 ALTER TABLE `myvehicle_table` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-05 16:32:49
+-- Dump completed on 2017-10-11  5:14:51

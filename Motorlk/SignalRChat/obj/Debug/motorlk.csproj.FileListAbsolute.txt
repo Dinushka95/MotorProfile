@@ -1,0 +1,39 @@
+E:\Projects\motorlk\SignalRChat\bin\SignalRChat.dll.config
+E:\Projects\motorlk\SignalRChat\bin\SignalRChat.dll
+E:\Projects\motorlk\SignalRChat\bin\SignalRChat.pdb
+E:\Projects\motorlk\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\Projects\motorlk\SignalRChat\bin\Microsoft.AspNet.SignalR.Owin.dll
+E:\Projects\motorlk\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Projects\motorlk\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Projects\motorlk\SignalRChat\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\motorlk\SignalRChat\bin\MySql.Data.DLL
+E:\Projects\motorlk\SignalRChat\bin\Newtonsoft.Json.dll
+E:\Projects\motorlk\SignalRChat\bin\Owin.dll
+E:\Projects\motorlk\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\Projects\motorlk\SignalRChat\bin\Microsoft.AspNet.SignalR.Owin.xml
+E:\Projects\motorlk\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\Projects\motorlk\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Projects\motorlk\SignalRChat\bin\Newtonsoft.Json.xml
+E:\Projects\motorlk\SignalRChat\obj\Debug\SignalRChat.dll
+E:\Projects\motorlk\SignalRChat\obj\Debug\SignalRChat.pdb
+E:\Projects\motorlk\SignalRChat\obj\Debug\motorlk.csprojResolveAssemblyReference.cache
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\SignalRChat.dll.config
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\SignalRChat.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\SignalRChat.pdb
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\MySql.Data.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\Newtonsoft.Json.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\Owin.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\MySql.Data.xml
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\bin\Newtonsoft.Json.xml
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\obj\Debug\motorlk.csprojResolveAssemblyReference.cache
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\obj\Debug\SignalRChat.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\Motorlk\SignalRChat\obj\Debug\SignalRChat.pdb
