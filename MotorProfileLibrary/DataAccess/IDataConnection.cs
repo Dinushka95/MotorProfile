@@ -18,5 +18,6 @@ namespace MotorProfileLibrary.DataAccess
 
         VehicleModel GetVehicleIOwn(string username);
 
+       List <LatestcarnewModel> GetLatestcarnew();
     }
 }

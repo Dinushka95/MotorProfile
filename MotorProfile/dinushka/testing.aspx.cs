@@ -22,5 +22,10 @@ namespace MotorProfile
         {
 
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            new SqlConnection().GetLatestcarnew();
+        }
     }
 }

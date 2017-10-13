@@ -110,6 +110,9 @@
     <Content Include="dinushka\fw\flat-icon\Flaticon.svg" />
     <Content Include="dinushka\fw\jquery\jquery-3.2.1.js" />
     <Content Include="dinushka\fw\jquery\jquery-3.2.1.min.js" />
+    <Content Include="dinushka\img\191701-toddlerboosterseats-cosco-highbackbooster.jpg" />
+    <Content Include="dinushka\img\223260-ultrahighperformancesummertires-yokohama-advansportv105.jpg" />
+    <Content Include="dinushka\img\2828-2014-bmw-3series-328dxdrive.jpg" />
     <Content Include="dinushka\img\audisq7.jpg" />
     <Content Include="dinushka\img\banner_cars_2016.jpg" />
     <Content Include="dinushka\img\carinmgmain.jpg" />
@@ -122,6 +125,9 @@
     <Content Include="dinushka\img\CR-Cars-Hero-Baby-on-Board-08-17-Crop.jpg" />
     <Content Include="dinushka\img\CR-Cars-Hero-Car-Battery-Installation-09-17-Crop.jpg" />
     <Content Include="dinushka\img\CR-Cars-Inline-Talking-Cars-124-10-17.jpg" />
+    <Content Include="dinushka\img\CR-Cars-PC-Car-Battery-07-16.jpg" />
+    <Content Include="dinushka\img\CR-Cars-PC-Hyundai-Tucson-11-15.jpg" />
+    <Content Include="dinushka\img\CR_product_card_all_cars.jpg" />
     <Content Include="dinushka\img\hyhonda.jpg" />
     <Content Include="dinushka\img\hyundaii20 .jpg" />
     <Content Include="dinushka\img\img_avatar.png" />
@@ -278,7 +284,6 @@
   <ItemGroup>
     <Folder Include="anurada\" />
     <Folder Include="dinushka\js\" />
-    <Folder Include="malan\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MotorProfileLibrary\MotorProfileLibrary.csproj">

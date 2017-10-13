@@ -29,7 +29,7 @@
                         <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Buying & Selling</a></li>
                         <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Hiring / Renting</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Vehicle Parts</a></li>
-                        <li><a href="http://localhost:53398/chat.aspx"><span class="flaticon-black-back-closed-envelope-shape"></span>&nbsp;Community Chat</a></li>
+                        <li><a href="http://localhost:53398/chat.aspx"><span class="flaticon-black-back-closed-envelope-shape"></span&nbsp;Community Chat</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <ul class="nav navbar-nav">
@@ -37,7 +37,7 @@
                                 <%--<a href="#" class="dropdown-toggle" id="accountnamemenu" data-toggle="dropdown"></a>--%>
                                 <asp:HyperLink ID="accountnamemenu" class="dropdown-toggle" Text="" data-toggle="dropdown" runat="server">&nbsp;</asp:HyperLink>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#"><span class="glyphicon glyphicon-cog pull-left"></span>&nbsp; Account Settings </a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-cog pull-left"></span>&nbsp; Account Settings  </a></li>
                                     <li class="divider"></li>
                                     <li><a href="#"><span class="glyphicon glyphicon-stats pull-left"></span>&nbsp;User stats </a></li>
                                     <li class="divider"></li>
@@ -70,117 +70,28 @@
 
 
                     <div class="row">
-                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
+                         <div id ="latestcarnew" runat="server">
+
+
+<%--                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
                             <div class="newsItem-cq-wrapper">
-
-
                                 <div id="_content_cro_en_cars1_jcrcontent_centerpars_newslist_v2_5_1462474367112" class="newsItem" data-url="/car-safety/hot-car-fatalities-year-round-threat-to-children-pets-heat-stroke/">
                                     <div class="news-item">
                                         <div class="figure">
                                             <img class="cr-image cr-image-lazy" src="/dinushka/img/CR-Cars-Hero-Baby-on-Board-08-17-Crop.jpg">
                                             <div class="news-overlay"></div>
-                                            
+
                                         </div>
-                                      
+
                                         <p class="title"><a href="/car-safety/hot-car-fatalities-year-round-threat-to-children-pets-heat-stroke/">CR Tests Show How Hot Car Fatalities Are Year-Round Threat </a></p>
                                     </div>
                                 </div>
-
-
                             </div>
+                        </div>--%>
 
-                        </div>
-                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
-                            <div class="newsItem-cq-wrapper">
+                             </div>
 
-                                <div id="_content_cro_en_cars1_jcrcontent_centerpars_newslist_v2_4_1462474363104" class="newsItem" data-url="/pickup-trucks/heavy-duty-pickup-truck-fuel-economy/">
-                                    <div class="news-item">
-                                        <div class="figure">
-                                            <img class="cr-image cr-image-lazy" src="/dinushka/img/CR-Cars-Hero-2017-Ford-F-250-farm-09-17-Crop.jpg">
-                                            <div class="news-overlay"></div>
-                                           
-                                        </div>
-                                        
-                                        <p class="title"><a href="/pickup-trucks/heavy-duty-pickup-truck-fuel-economy/">Exclusive: Heavy-Duty Pickup Truck Fuel Economy Results </a></p>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
-                            <div class="newsItem-cq-wrapper">
-                                <div id="_content_cro_en_cars1_jcrcontent_centerpars_newslist_v2_6_1462474370587" class="newsItem" data-url="/small-cars/2018-hyundai-elantra-gt-review-first-drive/">
-                                    <div class="news-item">
-                                        <div class="figure">
-                                            <img class="cr-image" src="/dinushka/img/CR-Cars-Hero-2018-Hyundai-Elantra-GTs-09-17-Crop.jpg">
-                                            <div class="news-overlay"></div>
-                                         
-                                        </div>
-                                      
-                                        <p class="title"><a href="/small-cars/2018-hyundai-elantra-gt-review-first-drive/">First Drive: 2018 Hyundai Elantra GT Brings More Heat the car to new  </a></p>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
-                            <div class="newsItem-cq-wrapper">
-                                <div id="_content_cro_en_cars1_jcrcontent_centerpars_newslist_v2_2_1462474355763" class="newsItem" data-url="/cars-driving/talking-cars-with-consumer-reports-124-honda-accord-car-deals/">
-                                    <div class="news-item">
-                                        <div class="figure">
-                                            <img class="cr-image cr-image-lazy" src="/dinushka/img/CR-Cars-Inline-Talking-Cars-124-10-17.jpg">
-                                            <div class="news-overlay"></div>
-                                        
-                                        </div>
-                                       
-                                        <p class="title"><a href="/cars-driving/talking-cars-with-consumer-reports-124-honda-accord-car-deals/">'Talking Cars' on 2018 Honda Accord, Hot New-Car Deals </a></p>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
-                            <div class="newsItem-cq-wrapper">
-                                <div id="_content_cro_en_cars1_jcrcontent_centerpars_newslist_v2_1_1462474318299" class="newsItem" data-url="/car-safety/high-tech-car-features-distract-drivers-aaa-study/">
-                                    <div class="news-item">
-                                        <div class="figure">
-                                            <img class="cr-image cr-image-lazy" src="/dinushka/img/CR-Cars-Hero-2018-Cadillac-CT6-CarPlay-10-17-Crop.jpg">
-                                            <div class="news-overlay"></div>
-                                           
-                                        </div>
-                                    
-                                        <p class="title"><a href="/car-safety/high-tech-car-features-distract-drivers-aaa-study/">High-Tech Features Distract Drivers for Dangerously Long Periods </a></p>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
-                            <div class="newsItem-cq-wrapper">
-                                <div id="_content_cro_en_cars1_jcrcontent_centerpars_newslist_v2_3_1462474359400" class="newsItem" data-url="/transportation/nhtsa-2016-highway-fatalities/">
-                                    <div class="news-item">
-                                        <div class="figure">
-                                            <img class="cr-image cr-image-lazy" src="/dinushka/img/CR-Cars-AH-Highway-Traffic-11-15.jpg">
-                                            <div class="news-overlay"></div>
-                                         
-                                        </div>
-                                   
-                                        <p class="title"><a href="/transportation/nhtsa-2016-highway-fatalities/">Traffic Deaths Top 37,000; Pedestrian/Bicycle Deaths Hit Highs </a></p>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
+ 
 
                         <div class="col-xs-12 hidden-lg hidden-sm hidden-md newsItem-devider-wrap">
                             <div class="newsItem-devider"></div>
@@ -192,11 +103,142 @@
 
                     <div class="row text-center show">
                         <a class="btn btn-default btn-lg btn-all" href="https://www.consumerreports.org/cro/news/index.htm#url=/bin/feedinfo.tag=productsAndServices:taxonomy|cars.json&amp;title=Cars&amp;page=1">View All
-    </a>
+                        </a>
                     </div>
 
                 </div>
             </section>
+        </div>
+        <!----------------------------------------CAr products-------------------------------------------------------------------------------->
+        <div class="container">
+
+            <div class="heading">
+                <div class="heading-container">
+                    <h2 class="heading-title crux-section-header">Car Product Ratings</h2>
+                    <h3 class="crux-body-copy">Research new and used cars, save money with the Build &amp; Buy Car Buying Service, and get the latest in car product Ratings, reviews, and news.</h3>
+                </div>
+            </div>
+
+
+            <div class="productCardsSmall">
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="productItemSmall-cq-wrapper">
+
+                            <div class="productItemSmall float-left " data-url="/cro/cars/sedans.htm">
+                                <img class="poster-img" height="80" width="110" src="//article.images.consumerreports.org/w_110/prod/content/dam/cro/New%20Homepage%20Assets/Hover-Over%20Lifestyle%20Cards/Cars/2828-2014-bmw-3series-328dxdrive">
+                                <div class="  ">
+                                    <a href="/cro/cars/sedans.htm">
+                                        <h4 class="crux-body-copy crux-body-copy--bold">New Sedans</h4>
+                                        <div class="productItemRated">
+                                            <div class="crux-body-copy crux-body-copy--small">98 Rated</div>
+                                            <div class="crux-body-copy crux-body-copy--small">Buying Guide</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="productItemSmall-container col-sm-4">
+                        <div class="productItemSmall-cq-wrapper">
+
+                            <div class="productItemSmall " data-url="/cro/tires.htm">
+                                <img class="poster-img" height="80" width="110" src="//crdms.images.consumerreports.org/prod/products/cr-legacy/production/products/testedmodel/profile/cr/jpg/240/223260-ultrahighperformancesummertires-yokohama-advansportv105.jpg">
+                                <div class="productItemDescription">
+                                    <a href="/cro/tires.htm">
+                                        <h4 class="crux-body-copy crux-body-copy--bold">Tires</h4>
+                                        <div class="productItemRated">
+                                            <div class="crux-body-copy crux-body-copy--small">176 Rated</div>
+                                            <div class="crux-body-copy crux-body-copy--small">Buying Guide</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="productItemSmall-container col-sm-4">
+                        <div class="productItemSmall-cq-wrapper">
+
+                            <div class="productItemSmall " data-url="/cro/car-seats.htm">
+                                <img class="poster-img" height="80" width="110" src="//crdms.images.consumerreports.org/prod/products/cr-legacy/production/products/testedmodel/profile/cr/jpg/240/191701-toddlerboosterseats-cosco-highbackbooster.jpg">
+                                <div class="productItemDescription">
+                                    <a href="/cro/car-seats.htm">
+                                        <h4 class="crux-body-copy crux-body-copy--bold">Car Seats</h4>
+                                        <div class="productItemRated">
+                                            <div class="crux-body-copy crux-body-copy--small">116 Rated</div>
+                                            <div class="crux-body-copy crux-body-copy--small">Buying Guide</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="productItemSmall-container col-sm-4">
+                        <div class="productItemSmall-cq-wrapper">
+
+                            <div class="productItemSmall " data-url="/cro/cars/suvs.htm">
+                                <img class="poster-img" height="80" width="110" src="//article.images.consumerreports.org/w_110/prod/content/dam/cro/news_articles/cars/CR-Cars-PC-Hyundai-Tucson-11-15">
+                                <div class="productItemDescription">
+                                    <a href="/cro/cars/suvs.htm">
+                                        <h4 class="crux-body-copy crux-body-copy--bold">New SUVs</h4>
+                                        <div class="productItemRated">
+                                            <div class="crux-body-copy crux-body-copy--small">88 Rated</div>
+                                            <div class="crux-body-copy crux-body-copy--small">Buying Guide</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="productItemSmall-container col-sm-4">
+                        <div class="productItemSmall-cq-wrapper">
+
+                            <div class="productItemSmall " data-url="https://www.consumerreports.org/cro/car-batteries.htm">
+                                <img class="poster-img" height="80" width="110" src="//article.images.consumerreports.org/w_110/prod/content/dam/cro/news_articles/cars/CR-Cars-PC-Car-Battery-07-16">
+                                <div class="productItemDescription">
+                                    <a href="https://www.consumerreports.org/cro/car-batteries.htm">
+                                        <h4 class="crux-body-copy crux-body-copy--bold">Car Batteries</h4>
+                                        <div class="productItemRated">
+                                            <div class="crux-body-copy crux-body-copy--small">64 Rated</div>
+                                            <div class="crux-body-copy crux-body-copy--small">Buying Guide</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="productItemSmall-container col-sm-4">
+                        <div class="productItemSmall-cq-wrapper">
+
+                            <div class="productItemSmall a-z-item" data-url="https://www.consumerreports.org/cro/cars/types/new-a-to-z-index.htm">
+                                <img class="poster-img" height="80" width="110" src="//article.images.consumerreports.org/w_110/prod/content/dam/cro/New%20Homepage%20Assets/Hover-Over%20Lifestyle%20Cards/CR_product_card_all_cars">
+                                <div class="productItemDescription">
+                                    <a href="https://www.consumerreports.org/cro/cars/types/new-a-to-z-index.htm">
+                                        <h4 class="crux-body-copy crux-body-copy--bold">All Cars A-Z</h4>
+                                        <div class="productItemRated">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
         </div>
         <!----------------------------------------best and worst car-------------------------------------------------------------------------------->
 
@@ -265,7 +307,7 @@
         </div>
 
 
-       
+
         <!------------------------------------------------------------------------------------------------------------------------>
 
 

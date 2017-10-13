@@ -20,7 +20,31 @@ namespace MotorProfile
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            LoadPage();
+        }
 
+        public void LoadPage()
+        {
+
+            List<LatestcarnewModel> latestcarnewModel = new List<LatestcarnewModel>();
+            latestcarnewModel = new SqlConnection().GetLatestcarnew();
+            string myhtml = "";
+            foreach (LatestcarnewModel ls in latestcarnewModel)
+            {
+                myhtml += $" <div class='newsItem-container col-xs-12 col-sm-6 col-lg-4'><div id = '_content_cro_en_cars1_jcrcontent_centerpars_newslist_v2_5_1462474367112' class='newsItem' data-url='{ls.Link}'>" +
+                                     "   <div class='news-item'>" +
+                                      "      <div class='figure'>" +
+                                       $"         <img class='cr-image cr-image-lazy' src='{ls.Imagelink}'>" +
+                                        "        <div class='news-overlay'></div>" +
+                                         "   </div>" +
+                                          $"  <p class='title'><a href = '{ls.Link}' > {ls.Tital}</a></p>" +
+                                        "</div>" +
+                                    "</div>" +
+                            "</div>";
+            }
+            latestcarnew.InnerHtml = myhtml;
+            myhtml = "";
+            // System.Diagnostics.Debug.WriteLine(myhtml);
         }
 
         protected void Button3login_Click(object sender, EventArgs e)

@@ -92,5 +92,17 @@ namespace MotorProfileLibrary.DataAccess
 
             return null;
         }
+
+        public List<LatestcarnewModel> GetLatestcarnew()
+        {
+            List <LatestcarnewModel> output = new List<LatestcarnewModel>();
+
+            using (IDbConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["MP_DB_Conn"].ConnectionString))
+            {               
+                output=connection.Query<LatestcarnewModel>("GetLatestcarnew").ToList();
+
+                return output;
+            }
+        }
     }
 }

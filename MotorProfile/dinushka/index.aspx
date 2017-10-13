@@ -28,12 +28,14 @@
                     <ul class="nav navbar-nav">
                         <li><a href="indexAfterlogin.aspx"><span class="flaticon-home-icon-silhouette"></span>&nbsp;Home</a></li>
                         <li><a href="ownerprofile.aspx"><span class="flaticon-man-user"></span>&nbsp;Profile</a></li>
-                        <li><a href="ratingsys.aspx"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Vehicle Rating</a></li>
                         <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Vehicles</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Buying & Selling</a></li>
-                        <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Hiring / Renting</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Vehicle Parts</a></li>
-                        <li><a href="http://localhost:53398/chat.aspx"><span class="flaticon-black-back-closed-envelope-shape"></span>&nbsp;Community Chat</a></li>
+                        <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Event</a></li>
+                        <li><a href="ratingsys.aspx"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Rating</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Buying</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Selling</a></li>
+                        <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Hiring</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Parts</a></li>
+                        <li><a href="http://localhost:53398/chat.aspx"><span class="flaticon-black-back-closed-envelope-shape"></span>&nbsp;Chat</a></li>
                     </ul>
                     
                     <ul class="nav navbar-nav navbar-right">
@@ -163,31 +165,25 @@
                         </div>
                     </div>
 
-                    <br class="clear">
-
+                    <br class="clear"/>
 
                     <div class="row">
-                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
-                            <div class="newsItem-cq-wrapper">
 
+                        <div id ="latestcarnew" runat="server">
 
-                                <div id="_content_cro_en_cars1_jcrcontent_centerpars_newslist_v2_5_1462474367112" class="newsItem" data-url="/car-safety/hot-car-fatalities-year-round-threat-to-children-pets-heat-stroke/">
-                                    <div class="news-item">
+<%--                        <div class=" col-xs-12 col-sm-6 col-lg-4">
+                            
+                                <div id="_content_cro_en_cars1_jcrcontent_centerpars_newslist_v2_5_1462474367112" class="" data-url="/car-safety/hot-car-fatalities-year-round-threat-to-children-pets-heat-stroke/">
                                         <div class="figure">
-                                            <img class="cr-image cr-image-lazy" src="/dinushka/img/CR-Cars-Hero-Baby-on-Board-08-17-Crop.jpg">
-                                            <div class="news-overlay"></div>
-                                            
+                                            <img src="/dinushka/img/CR-Cars-Hero-Baby-on-Board-08-17-Crop.jpg"/>                                         
                                         </div>
-                                      
                                         <p class="title"><a href="/car-safety/hot-car-fatalities-year-round-threat-to-children-pets-heat-stroke/">CR Tests Show How Hot Car Fatalities Are Year-Round Threat </a></p>
-                                    </div>
-                                </div>
-
-
-                            </div>
+                                </div> 
+                            </div>--%>
 
                         </div>
-                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
+
+<%--                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
                             <div class="newsItem-cq-wrapper">
 
                                 <div id="_content_cro_en_cars1_jcrcontent_centerpars_newslist_v2_4_1462474363104" class="newsItem" data-url="/pickup-trucks/heavy-duty-pickup-truck-fuel-economy/">
@@ -277,7 +273,7 @@
 
                             </div>
 
-                        </div>
+                        </div>--%>
 
                         <div class="col-xs-12 hidden-lg hidden-sm hidden-md newsItem-devider-wrap">
                             <div class="newsItem-devider"></div>

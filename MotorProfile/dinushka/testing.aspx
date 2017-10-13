@@ -27,13 +27,13 @@
                 var emid = $('#TextBox1').val();
                 alert(emid);
                 $.ajax({
-                    url: '/dinushka/tesing.asmx',
+                    url: '/dinushka/tesing.asmx/getvaluebyid',
                     data: { id: 18 },
                     method: 'post',
                     dataType: 'json',
                     success: function (data) {
                         //var jqueryxml = $(data);
-                       // alert(data.Name);
+                        alert(data.Name);
                         $('#Label2').val(data.Name);
                     },
                     error: function (err) {
@@ -61,6 +61,7 @@
              });
         });
     </script>
+    
 
         <div>
 
@@ -72,6 +73,10 @@
             <br />
             <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
         </div>
+        
+    
+
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" />
         
     
 
