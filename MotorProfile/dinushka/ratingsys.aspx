@@ -26,15 +26,18 @@
                 <div class="container-fluid">
 
                     <ul class="nav navbar-nav">
-                        <li><a href="indexAfterlogin.aspx"><span class="flaticon-home-icon-silhouette"></span>&nbsp;Home</a></li>
-                        <li><a href="ownerprofile.aspx"><span class="flaticon-man-user"></span>&nbsp;Profile</a></li>
-                        <li><a href="ratingsys.aspx"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Vehicle Rating</a></li>
+                        <li><a href="indexAfterlogin.aspx"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+                        <li><a href="ownerprofile.aspx"><span class="glyphicon glyphicon-user"></span>&nbsp;Profile</a></li>
                         <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Vehicles</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Buying & Selling</a></li>
-                        <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Hiring / Renting</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Vehicle Parts</a></li>
-                        <li><a href="http://localhost:53398/chat.aspx"><span class="flaticon-black-back-closed-envelope-shape"></span>&nbsp;Community Chat</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;Event</a></li>
+                        <li><a href="ratingsys.aspx"><span class="glyphicon glyphicon-star"></span>&nbsp;Rating</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Buying</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Selling</a></li>
+                        <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Hiring</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Parts</a></li>
+                        <li><a href="http://localhost:53398/chat.aspx"><span class="glyphicon glyphicon-comment"></span>&nbsp;Chat</a></li>
                     </ul>
+
                     <ul class="nav navbar-nav navbar-right">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">

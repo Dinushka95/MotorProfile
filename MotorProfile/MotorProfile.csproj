@@ -110,6 +110,8 @@
     <Content Include="dinushka\fw\flat-icon\Flaticon.svg" />
     <Content Include="dinushka\fw\jquery\jquery-3.2.1.js" />
     <Content Include="dinushka\fw\jquery\jquery-3.2.1.min.js" />
+    <Content Include="dinushka\fw\validation\additional-methods.min.js" />
+    <Content Include="dinushka\fw\validation\jquery.validate.min.js" />
     <Content Include="dinushka\img\191701-toddlerboosterseats-cosco-highbackbooster.jpg" />
     <Content Include="dinushka\img\223260-ultrahighperformancesummertires-yokohama-advansportv105.jpg" />
     <Content Include="dinushka\img\2828-2014-bmw-3series-328dxdrive.jpg" />

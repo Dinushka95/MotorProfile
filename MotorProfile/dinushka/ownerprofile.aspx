@@ -26,15 +26,18 @@
                 <div class="container-fluid">
 
                     <ul class="nav navbar-nav">
-                        <li><a href="indexAfterlogin.aspx"><span class="flaticon-home-icon-silhouette"></span>&nbsp;Home</a></li>
-                        <li><a href="ownerprofile.aspx"><span class="flaticon-man-user"></span>&nbsp;Profile</a></li>
-                        <li><a href="ratingsys.aspx"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Vehicle Rating</a></li>
+                        <li><a href="indexAfterlogin.aspx"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+                        <li><a href="ownerprofile.aspx"><span class="glyphicon glyphicon-user"></span>&nbsp;Profile</a></li>
                         <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Vehicles</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Buying & Selling</a></li>
-                        <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Hiring / Renting</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Vehicle Parts</a></li>
-                        <li><a href="http://localhost:53398/chat.aspx"><span class="flaticon-black-back-closed-envelope-shape"></span>&nbsp;Community Chat</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;Event</a></li>
+                        <li><a href="ratingsys.aspx"><span class="glyphicon glyphicon-star"></span>&nbsp;Rating</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Buying</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Selling</a></li>
+                        <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Hiring</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Parts</a></li>
+                        <li><a href="http://localhost:53398/chat.aspx"><span class="glyphicon glyphicon-comment"></span>&nbsp;Chat</a></li>
                     </ul>
+
                     <ul class="nav navbar-nav navbar-right">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
@@ -43,9 +46,9 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="#"><span class="glyphicon glyphicon-cog pull-left"></span>&nbsp; Account Settings </a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-stats pull-left"></span>&nbsp;User stats </a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-log-out pull-left"></span>&nbsp; Sign Out </a></li>
+<%--                                    <li><a href="#"><span class="glyphicon glyphicon-stats pull-left"></span>&nbsp;User stats </a></li>
+                                    <li class="divider"></li>--%>
+                                    <li> <asp:LinkButton ID="LinkButton1" runat="server" Text="Sign Out" OnClick="Button1_Click">Sign Out</asp:LinkButton></li>
                                 </ul>
                             </li>
                         </ul>
@@ -61,45 +64,40 @@
 
 
         <div class="container target">
-            <div class="row">
-
-                <div class="col-sm-10">
-                    <h1 class="">
-                        <asp:Label ID="welcomemessage" runat="server" Text="Welcome {accountname}"></asp:Label></h1>
-
-                    <div class="col-sm-2">
-                        <img title="profile image" class="img-circle img-responsive" src="img/img_avatar.png" />
-                        <br />
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="row">
+           
+             
                 <div class="col-sm-3">
+                   
+                    <h2 class="">
+                       <br />
+                        <asp:Label ID="welcomemessage" runat="server" Text="Welcome {accountname}"></asp:Label></h2>
+
+                  
+
+               
                     <!--left col-->
                     <ul class="list-group">
                         <li class="list-group-item text-muted" contenteditable="false">Profile</li>
+                        <li class="list-group-item text-right"><asp:Image ID="Image1" runat="server" Height="200" Width="200" /></li>
                         <li class="list-group-item text-right"><span class="pull-left"><strong class="">Joined</strong></span> 2.13.2014</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Last seen</strong></span> Yesterday</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Real name</strong></span> {name}</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location: </strong></span>{city}
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Last seen</strong></span><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Real name</strong></span><asp:Label ID="Label2name" runat="server" Text=""></asp:Label></li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Location: </strong></span>
+                            <asp:Label ID="Label3location" runat="server" Text=""></asp:Label>
                         </li>
                     </ul>
 
                     <div class="panel panel-default">
 
                         <div class="panel-body">
-                            <i style="color: green" class="fa fa-check-square"></i>
-                            {details/ descrption /bio}
+                            <i style="color: green" class="fa fa-check-square"></i>Description:-
+                            <asp:Label ID="Label2des" runat="server" Text=""></asp:Label>
                         </div>
 
                     </div>
-                    
+                   
 
-                    <ul class="list-group">
+<%--                    <ul class="list-group">
                         <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i>
 
                         </li>
@@ -121,23 +119,23 @@
                             </ul>
 
                         </div>
-                    </div>
+                    </div>--%>
                 </div>
 
 
                 <!--/col-3-->
-                <div class="col-sm-9" style="" contenteditable="false">
+<%--                <div class="col-sm-9" style="" contenteditable="false">
                     <div class="panel panel-default">
                         <div class="panel-heading">{Lastest Updates}</div>
                         <div class="panel-body">
                             { last interrations}
                         </div>
-                    </div>
+                    </div>--%>
 
 
-                    <div class="panel panel-default target">
+                    <div class="panel panel-default ">
                         <div class="panel-heading" contenteditable="false">Vehicles I Own</div>
-                        <div class="panel-body">
+                        <div class="panel-body ">
                             <div class="row">
                                 
                                 <div id ="myowncar" runat="server"><%--add data from server --%>
@@ -162,7 +160,7 @@
 
                     <div class="panel panel-default">
                         <div class="panel-heading">Previously owned vehicles</div>
-                        <div class="panel-body">
+                        <div class="panel-body f">
                             <div class="row">
 
                                 <div id ="myownedcar" runat="server">

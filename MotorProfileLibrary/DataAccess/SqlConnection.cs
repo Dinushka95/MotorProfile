@@ -29,6 +29,7 @@ namespace MotorProfileLibrary.DataAccess
                 p.Add("jdate", model.Jdate);
                 p.Add("lsdate", model.Lsdate);
                 p.Add("description", model.Description);
+                p.Add("picture",model.Picture);
                 p.Add("username", model.Username);
                 p.Add("password", encryptionNow(model.Password));
 
@@ -87,10 +88,28 @@ namespace MotorProfileLibrary.DataAccess
             return Encryption.AESThenHMAC.CreateMD5(e);
         }
 
-        public VehicleModel GetVehicleIOwn(string username)
+        public List<VehicleModel> GetVehicleIOwn(string username)
         {
+            List<VehicleModel> output;
 
-            return null;
+            using (IDbConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["MP_DB_Conn"].ConnectionString))
+            {
+                var p = new DynamicParameters();
+                p.Add("username", username);
+                p.Add("id", 0, dbType: DbType.String, direction: ParameterDirection.Output);
+                p.Add("picture", 0, dbType: DbType.String, direction: ParameterDirection.Output);
+                p.Add("regnumber", 0, dbType: DbType.String, direction: ParameterDirection.Output);
+                p.Add("vname", 0, dbType: DbType.String, direction: ParameterDirection.Output);
+                p.Add("soldornot", 0, dbType: DbType.String, direction: ParameterDirection.Output);
+                output = connection.Query<VehicleModel>("GetvehicleiownbyUsername", p, commandType: CommandType.StoredProcedure).ToList();
+                
+
+
+                System.Diagnostics.Debug.WriteLine(output[0].Name);
+
+            }
+            return output;
+
         }
 
         public List<LatestcarnewModel> GetLatestcarnew()
@@ -103,6 +122,11 @@ namespace MotorProfileLibrary.DataAccess
 
                 return output;
             }
+        }
+
+        VehicleModel IDataConnection.GetVehicleIOwn(string username)
+        {
+            throw new NotImplementedException();
         }
     }
 }

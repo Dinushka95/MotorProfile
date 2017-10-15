@@ -27,5 +27,22 @@ namespace MotorProfile
         {
             new SqlConnection().GetLatestcarnew();
         }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+           
+        
+            string message = "You will now be redirected to YOUR Page.";
+            string url = "http://www.yourpage.com/";
+            string script = "window.onload = function(){ alert('";
+            script += message;
+            script += "');";
+            script += "window.location = '";
+            script += url;
+            script += "'; }";
+            ClientScript.RegisterStartupScript(this.GetType(), "Redirect", script, true);
+        
+    }
+
     }
 }

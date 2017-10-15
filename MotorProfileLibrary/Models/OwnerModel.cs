@@ -17,6 +17,7 @@ namespace MotorProfileLibrary.Models
         public string Jdate { get; set; }
         public string Lsdate { get; set; }
         public string Description { get; set; }
+        public string Picture { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
 
@@ -34,7 +35,7 @@ namespace MotorProfileLibrary.Models
 
         
 
-        public OwnerModel(string name, string age ,string location, string gender,string email,string jdate,string lsdate,string description,string username,string password)
+        public OwnerModel(string name, string age ,string location, string gender,string email,string jdate,string lsdate,string description,string picture,string username,string password)
         {
             Name = name;
             Age = age;
@@ -44,12 +45,13 @@ namespace MotorProfileLibrary.Models
             Jdate = jdate;
             lsdate = Lsdate;
             Description = description;
+            Picture = picture;
             Username = username;
             Password = password;
         }
 
 
-        public OwnerModel(int id, string name, string age, string location, string gender, string email, string jdate, string lsdate, string description, string username, string password)
+        public OwnerModel(int id, string name, string age, string location, string gender, string email, string jdate, string lsdate, string description, string picture, string username, string password)
         {
             Id = id;
             Name = name;
@@ -58,7 +60,9 @@ namespace MotorProfileLibrary.Models
             Gender = gender;
             Email = email;
             Jdate = jdate;
-            lsdate = Lsdate;
+            Lsdate = lsdate;
+            Description = description;
+            Picture = picture;
             Username = username;
             Password = password;
         }

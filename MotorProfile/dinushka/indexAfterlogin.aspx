@@ -22,15 +22,18 @@
                 <div class="container-fluid">
 
                     <ul class="nav navbar-nav">
-                        <li><a href="indexAfterlogin.aspx"><span class="flaticon-home-icon-silhouette"></span>&nbsp;Home</a></li>
-                        <li><a href="ownerprofile.aspx"><span class="flaticon-man-user"></span>&nbsp;Profile</a></li>
-                        <li><a href="ratingsys.aspx"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;Vehicle Rating</a></li>
+                        <li><a href="indexAfterlogin.aspx"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+                        <li><a href="ownerprofile.aspx"><span class="glyphicon glyphicon-user"></span>&nbsp;Profile</a></li>
                         <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Vehicles</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Buying & Selling</a></li>
-                        <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Hiring / Renting</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Vehicle Parts</a></li>
-                        <li><a href="http://localhost:53398/chat.aspx"><span class="flaticon-black-back-closed-envelope-shape"></span&nbsp;Community Chat</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;Event</a></li>
+                        <li><a href="ratingsys.aspx"><span class="glyphicon glyphicon-star"></span>&nbsp;Rating</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Buying</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-usd"></span>&nbsp;Selling</a></li>
+                        <li><a href="#"><span class="flaticon-sports-car"></span>&nbsp;Hiring</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>&nbsp;Parts</a></li>
+                        <li><a href="http://localhost:53398/chat.aspx"><span class="glyphicon glyphicon-comment"></span>&nbsp;Chat</a></li>
                     </ul>
+
                     <ul class="nav navbar-nav navbar-right">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
@@ -38,10 +41,10 @@
                                 <asp:HyperLink ID="accountnamemenu" class="dropdown-toggle" Text="" data-toggle="dropdown" runat="server">&nbsp;</asp:HyperLink>
                                 <ul class="dropdown-menu">
                                     <li><a href="#"><span class="glyphicon glyphicon-cog pull-left"></span>&nbsp; Account Settings  </a></li>
+                                    <%--<li class="divider"></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-stats pull-left"></span>&nbsp;User stats </a></li>--%>
                                     <li class="divider"></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-stats pull-left"></span>&nbsp;User stats </a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-log-out pull-left"></span>&nbsp; Sign Out </a></li>
+                                    <li> <asp:LinkButton ID="LinkButton1" runat="server" Text="Sign Out" OnClick="Button1_Click">Sign Out</asp:LinkButton></li>
                                 </ul>
                             </li>
                         </ul>
@@ -101,10 +104,10 @@
                     <input class="newsNumber" value="6" type="hidden">
 
 
-                    <div class="row text-center show">
+<%--                    <div class="row text-center show">
                         <a class="btn btn-default btn-lg btn-all" href="https://www.consumerreports.org/cro/news/index.htm#url=/bin/feedinfo.tag=productsAndServices:taxonomy|cars.json&amp;title=Cars&amp;page=1">View All
                         </a>
-                    </div>
+                    </div>--%>
 
                 </div>
             </section>
@@ -298,10 +301,10 @@
                         </div>
                     </div>
                     <input class="newsNumber" value="3" type="hidden">
-                    <div class="row text-center show">
+<%--                    <div class="row text-center show">
                         <a class="btn btn-default btn-lg btn-all" href="https://www.consumerreports.org/cro/2012/05/best-and-worst-new-cars/index.htm">View All
                         </a>
-                    </div>
+                    </div>--%>
                 </div>
             </section>
         </div>
