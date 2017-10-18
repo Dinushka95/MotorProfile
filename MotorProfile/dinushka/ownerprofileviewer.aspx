@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ownerprofile.aspx.cs" Inherits="MotorProfile.ownerprofile" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ownerprofileviewer.aspx.cs" Inherits="MotorProfile.dinushka.ownerprofileviewer" %>
 
 <!DOCTYPE html>
 
@@ -17,11 +17,9 @@
     <title>Owner Profile </title>
 
 </head>
-
 <body>
     <form id="form1" runat="server">
-
-        <!-- Navigation Bar -->
+                <!-- Navigation Bar -->
         <div>
             <nav class="navbar navbar-custom">
                 <div class="container-fluid">
@@ -47,10 +45,9 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="#"><span class="glyphicon glyphicon-cog pull-left"></span>&nbsp; Account Settings </a></li>
                                     <li class="divider"></li>
-                                    <%--                                    <li><a href="#"><span class="glyphicon glyphicon-stats pull-left"></span>&nbsp;User stats </a></li>
+<%--                                    <li><a href="#"><span class="glyphicon glyphicon-stats pull-left"></span>&nbsp;User stats </a></li>
                                     <li class="divider"></li>--%>
-                                    <li>
-                                        <asp:LinkButton ID="LinkButton1" runat="server" Text="Sign Out" OnClick="Button1_Click">Sign Out</asp:LinkButton></li>
+                                    <li> <asp:LinkButton ID="LinkButton1" runat="server" Text="Sign Out" OnClick="Button1_Click">Sign Out</asp:LinkButton></li>
                                 </ul>
                             </li>
                         </ul>
@@ -59,34 +56,15 @@
             </nav>
         </div>
         <!------------------------------------------------------------------------------------------------------------------------>
-  <div class="row center-block ">
-  
-          <div class="col-lg-6 col-lg-offset-3 text-center">
-            <div class="input-group">
-                <asp:TextBox ID="TextBox1" class="form-control" runat="server" Text="Search for..."></asp:TextBox>
-              <span class="input-group-btn">
-                  <asp:Button ID="Button1" class="btn btn-secondary" runat="server" Text="Search" OnClick="Button1_Click1" />
-              </span>
-            </div>
-          </div>
-        </div> 
-        <!------------------------------------------------------------------------------------------------------------------------>
-        <br />
-        <!------------------------------------------------------------------------------------------------------------------------>
-
-
-
-        <!-- Needed because other elements inside ProfilePage have floats -->
-
-
-        <div class="container target">
+        
+ <div class="container target">
 
 
             <div class="col-sm-3">
 
                 <h2 class="">
                     <br />
-                    <asp:Label ID="welcomemessage" runat="server" Text="Welcome {accountname}"></asp:Label></h2>
+                    <br /> 
 
 
 
@@ -114,48 +92,15 @@
                 </div>
 
 
-                <%--                    <ul class="list-group">
-                        <li class="list-group-item text-muted">Activity <i class="fa fa-dashboard fa-1x"></i>
+                </div>
 
-                        </li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Shares</strong></span> 125</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Likes</strong></span> 13</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Posts</strong></span> 37</li>
-                        <li class="list-group-item text-right"><span class="pull-left"><strong class="">Followers</strong></span> 78</li>
-                    </ul>
-
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Social Media</div>
-                        <div class="panel-body">
-
-                            <ul class="list-group">
-                                <li class="list-group-item ">Facebook</li>
-                                <li class="list-group-item ">Instrgram</li>
-                                <li class="list-group-item ">Flicker</li>
-                            </ul>
-
-                        </div>
-                    </div>--%>
-            </div>
-
-
-            <!--/col-3-->
-            <%--                <div class="col-sm-9" style="" contenteditable="false">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">{Lastest Updates}</div>
-                        <div class="panel-body">
-                            { last interrations}
-                        </div>
-                    </div>--%>
             <div class="panel panel-default ">
-                <div class="panel-heading" contenteditable="false">Vehicles I Own</div>
-                <div class="panel-body ">
-                    <div class="row">
-                        <br /><br />
-                        <div id="myowncar" runat="server">
-                            <%--add data from server --%>
-                            <%--                                    <div class="col-md-4">
+                        <div class="panel-heading" contenteditable="false">Vehicles I Own</div>
+                        <div class="panel-body ">
+                            <div class="row">
+                                 <br /> <br />
+                                <div id ="myowncar" runat="server"><%--add data from server --%>
+ <%--                                    <div class="col-md-4">
                                     <div class="thumbnail">
                                         <img alt="300x200" src="img/sports.jpg">
                                         <div class="caption">
@@ -164,23 +109,18 @@
                                         </div>
                                     </div>
                                 </div>--%>
+                                </div>
+                            </div>
                         </div>
-
-
-
-
                     </div>
-                </div>
-            </div>
 
+                                <div class="panel panel-default">
+                        <div class="panel-heading">Previously owned vehicles</div>
+                        <div class="panel-body f">
+                            <div class="row">
 
-            <div class="panel panel-default">
-                <div class="panel-heading">Previously owned vehicles</div>
-                <div class="panel-body f">
-                    <div class="row">
-
-                        <div id="myownedcar" runat="server">
-                            <%--                                <div class="col-md-4">
+                                <div id ="myownedcar" runat="server">
+<%--                                <div class="col-md-4">
                                     <div class="thumbnail">
                                         <img alt="300x200" src="img/sports.jpg">
                                         <div class="caption">
@@ -189,22 +129,14 @@
                                         </div>
                                     </div>
                                 </div>--%>
+                                    </div>
+
+
+                            </div>
                         </div>
-
-
                     </div>
+
                 </div>
-            </div>
-
-        </div>
-
-        <script>
-            //DropDownList1search.Items.Add("s");
-            $('html-place').editableSelect();
-
-        </script>
-
-
     </form>
 </body>
 </html>

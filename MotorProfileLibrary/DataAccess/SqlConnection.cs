@@ -39,7 +39,8 @@ namespace MotorProfileLibrary.DataAccess
 
         }
 
-        public bool CheckLogin(OwnerModel model)
+
+        public int CheckLogin(OwnerModel model)
         {
             using (IDbConnection connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["MP_DB_Conn"].ConnectionString))
             {
@@ -53,11 +54,12 @@ namespace MotorProfileLibrary.DataAccess
                 try
                 {
                     model.Id = p.Get<int>("id");
-                    return true;
+                    System.Diagnostics.Debug.WriteLine(model.Id);
+                    return model.Id;
                 }
                 catch (Exception)
                 {
-                    return false;
+                    return 0;
                 }
             }
         }

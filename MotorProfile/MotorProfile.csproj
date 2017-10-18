@@ -108,6 +108,8 @@
     <Content Include="dinushka\fw\flat-icon\flaticon.css" />
     <Content Include="dinushka\fw\flat-icon\flaticon.html" />
     <Content Include="dinushka\fw\flat-icon\Flaticon.svg" />
+    <Content Include="dinushka\fw\jquery-editable-select.min.css" />
+    <Content Include="dinushka\fw\jquery-editable-select.min.js" />
     <Content Include="dinushka\fw\jquery\jquery-3.2.1.js" />
     <Content Include="dinushka\fw\jquery\jquery-3.2.1.min.js" />
     <Content Include="dinushka\fw\validation\additional-methods.min.js" />
@@ -139,6 +141,7 @@
     <Content Include="dinushka\index.aspx" />
     <Content Include="dinushka\indexAfterlogin.aspx" />
     <Content Include="dinushka\ownerprofile.aspx" />
+    <Content Include="dinushka\ownerprofileviewer.aspx" />
     <Content Include="dinushka\tesing.asmx" />
     <Content Include="duminth\2015_koenigsegg_agera_hh-HD.jpg" />
     <Content Include="duminth\2016-Koenigsegg-Agera-RS-2.jpg" />
@@ -226,6 +229,13 @@
     </Compile>
     <Compile Include="dinushka\ownerprofile.aspx.designer.cs">
       <DependentUpon>ownerprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dinushka\ownerprofileviewer.aspx.cs">
+      <DependentUpon>ownerprofileviewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dinushka\ownerprofileviewer.aspx.designer.cs">
+      <DependentUpon>ownerprofileviewer.aspx</DependentUpon>
     </Compile>
     <Compile Include="dinushka\tesing.asmx.cs">
       <DependentUpon>tesing.asmx</DependentUpon>

@@ -15,6 +15,7 @@ namespace MotorProfile
     public partial class index : System.Web.UI.Page
     {
         String currentuser;
+        String userid;
         Boolean LoginStatues;
 
 
@@ -52,8 +53,8 @@ namespace MotorProfile
             if (Page.IsValid)
             {
                 OwnerModel model = new OwnerModel(TextBox1.Text, TextBox2.Text);
-
-                if (new SqlConnection().CheckLogin(model))
+                int x = new SqlConnection().CheckLogin(model);
+                if (x!=0)
                 {
 
                     HttpContext.Current.Session["username"] = TextBox1.Text;

@@ -322,8 +322,10 @@
                     </div>
                     <br class="clear">
 
+                     <
                     <div class="row">
-                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
+                      <div id ="bestworstcar" runat="server">
+<%--                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
                             <div class="newsItem-cq-wrapper">
                                 <div id="_content_cro_en_cars1_jcrcontent_centerpars_newslist_v2_0_6_1469045940947" class="newsItem" data-url="/car-batteries/tests-reveal-the-best-car-batteries/">
                                     <div class="news-item">
@@ -335,8 +337,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
+                        </div>--%>
+
+                          </div>
+
+
+<%--                        <div class="newsItem-container col-xs-12 col-sm-6 col-lg-4">
                             <div class="newsItem-cq-wrapper">
                                 <div id="_content_cro_en_cars1_jcrcontent_centerpars_newslist_v2_0_7_1469045951731" class="newsItem" data-url="/all-wheel-drive/best-all-wheel-drive-cars-suvs/">
                                     <div class="news-item">
@@ -361,7 +367,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>--%>
                         <div class="col-xs-12 hidden-lg hidden-sm hidden-md newsItem-devider-wrap">
                             <div class="newsItem-devider"></div>
                         </div>

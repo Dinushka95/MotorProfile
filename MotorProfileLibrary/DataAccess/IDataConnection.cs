@@ -14,7 +14,7 @@ namespace MotorProfileLibrary.DataAccess
 
         OwnerModel GetOwner(int key);
 
-        bool CheckLogin(OwnerModel model);
+        int CheckLogin(OwnerModel model);
 
         VehicleModel GetVehicleIOwn(string username);
 

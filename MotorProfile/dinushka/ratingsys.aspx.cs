@@ -29,5 +29,13 @@ namespace MotorProfile
             }
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            HttpContext.Current.Session["username"] = "";
+            HttpContext.Current.Session["LogStatues"] = false;
+
+            Response.Redirect("~/dinushka/index.aspx");
+        }
     }
 }

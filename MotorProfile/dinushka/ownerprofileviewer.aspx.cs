@@ -1,5 +1,4 @@
-﻿using MotorProfileLibrary.DataAccess;
-using MotorProfileLibrary.Models;
+﻿using MotorProfileLibrary.Models;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -8,23 +7,23 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace MotorProfile
+namespace MotorProfile.dinushka
 {
-    public partial class ownerprofile : System.Web.UI.Page
+    public partial class ownerprofileviewer : System.Web.UI.Page
     {
         String currentuser;
         Boolean LoginStatues;
-
+        string searchuser;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-           
             if ((Session["username"] != null))
             {
                 currentuser = Session["username"].ToString();
                 LoginStatues = (Boolean)Session["LogStatues"];
 
                 accountnamemenu.Text = currentuser;
+                searchuser = Application["search"].ToString();
                 LoadPage();
             }
             else
@@ -32,20 +31,19 @@ namespace MotorProfile
                 Response.Redirect("index.aspx");
 
             }
-
         }
+
 
         public void LoadPage()
         {
-            Label1.Text= DateTime.Now.ToString("M/d/yyyy");
-
+            Label1.Text = DateTime.Now.ToString("M/d/yyyy");
 
             //load owner details 
             MySqlConnection connection1 = new MySqlConnection("Database=mp_schema;Data Source=motorprofile.cht0bvbob1wj.us-west-2.rds.amazonaws.com;User Id=motorprofile;Password=motorroot;");
             connection1.Open();
             MySqlCommand command1 = connection1.CreateCommand();
 
-            command1.CommandText = $"SELECT * FROM `mp_schema`.`owner_table` where username_owner_tablecol ='{currentuser}';";
+            command1.CommandText = $"SELECT * FROM `mp_schema`.`owner_table` where username_owner_tablecol ='{searchuser}';";
             MySqlDataReader reader1 = command1.ExecuteReader();
 
             OwnerModel ownedmodel = new OwnerModel();
@@ -71,18 +69,19 @@ namespace MotorProfile
             Label2name.Text = ownedmodel.Name;
             Label3location.Text = ownedmodel.Location;
 
-            
             //------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             //load vehicles  details 
             MySqlConnection connection = new MySqlConnection("Database=mp_schema;Data Source=motorprofile.cht0bvbob1wj.us-west-2.rds.amazonaws.com;User Id=motorprofile;Password=motorroot;");
             connection.Open();
             MySqlCommand command = connection.CreateCommand();
 
-            command.CommandText = "SELECT `myvehicle_table`.`idowner_myvehicle_tablecol`,`vehicle_table`.`id_vehicle_table`,`vehicle_table`.`model_vehicle_tablecol`,`vehicle_table`.`picture_vehicle_tablecol`,`vehicle_table`.`name_vehicle_tablecol`,`vehicle_table`.`regnumber_vehicle_tablecol`, `vehicle_table`.`regdate_vehicle_tablecol`,`vehicle_table`.`country_vehicle_tablecol`,`vehicle_table`.`videolink_vehicle_tablecol`, `myvehicle_table`.`soldornot_myvehicle_tablecol` FROM mp_schema.myvehicle_table LEFT JOIN mp_schema.vehicle_table on idvehicle_myvehicle_tablecol = id_vehicle_table  where idowner_myvehicle_tablecol = ( SELECT id_owner_table FROM mp_schema.owner_table where username_owner_tablecol ='" + currentuser + "'); ";
+            string c= "SELECT `myvehicle_table`.`idowner_myvehicle_tablecol`,`vehicle_table`.`id_vehicle_table`,`vehicle_table`.`model_vehicle_tablecol`,`vehicle_table`.`picture_vehicle_tablecol`,`vehicle_table`.`name_vehicle_tablecol`,`vehicle_table`.`regnumber_vehicle_tablecol`, `vehicle_table`.`regdate_vehicle_tablecol`,`vehicle_table`.`country_vehicle_tablecol`,`vehicle_table`.`videolink_vehicle_tablecol`, `myvehicle_table`.`soldornot_myvehicle_tablecol` FROM mp_schema.myvehicle_table LEFT JOIN mp_schema.vehicle_table on idvehicle_myvehicle_tablecol = id_vehicle_table  where idowner_myvehicle_tablecol = ( SELECT id_owner_table FROM mp_schema.owner_table where username_owner_tablecol ='" + searchuser + "'); ";
+            System.Diagnostics.Debug.WriteLine(c);
+            command.CommandText = c;
             MySqlDataReader reader = command.ExecuteReader();
 
             List<VehicleModel> iownmodels = new List<VehicleModel>();
-           // iownmodels = new SqlConnection().GetVehicleIOwn("admin");
+            // iownmodels = new SqlConnection().GetVehicleIOwn("admin");
             List<VehicleModel> iownedmodels = new List<VehicleModel>();
             while (reader.Read())
             {
@@ -111,7 +110,7 @@ namespace MotorProfile
 
             string myhtml = "";
 
-            welcomemessage.Text = "Welcome " + currentuser;
+            
 
             foreach (VehicleModel x in iownmodels)
             {
@@ -141,29 +140,5 @@ namespace MotorProfile
             Response.Redirect("~/dinushka/index.aspx");
         }
 
-        protected void Button1_Click1(object sender, EventArgs e)
-        {
-            MySqlConnection connection1 = new MySqlConnection("Database=mp_schema;Data Source=motorprofile.cht0bvbob1wj.us-west-2.rds.amazonaws.com;User Id=motorprofile;Password=motorroot;");
-            connection1.Open();
-            MySqlCommand command1 = connection1.CreateCommand();
-
-            command1.CommandText = $"SELECT username_owner_tablecol FROM mp_schema.owner_table where username_owner_tablecol like '{TextBox1.Text}%';";
-            MySqlDataReader reader1 = command1.ExecuteReader();
-
-            if (reader1.Read())
-            {
-                Application["search"] = TextBox1.Text;
-                Response.Redirect("~/dinushka/ownerprofileviewer.aspx");
-            }
-
-            else
-            {
-                Application["search"] = "";
-                Response.Redirect("~/dinushka/ownerprofile.aspx");
-            }
-
-            reader1.Close();
-            connection1.Close();
-        }
     }
 }

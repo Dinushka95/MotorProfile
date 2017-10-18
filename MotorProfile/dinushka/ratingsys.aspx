@@ -21,7 +21,7 @@
     <div>
     
    <!-- Navigation Bar -->
-        <div>
+                <div>
             <nav class="navbar navbar-custom">
                 <div class="container-fluid">
 
@@ -46,9 +46,9 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="#"><span class="glyphicon glyphicon-cog pull-left"></span>&nbsp; Account Settings </a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-stats pull-left"></span>&nbsp;User stats </a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#"><span class="glyphicon glyphicon-log-out pull-left"></span>&nbsp; Sign Out </a></li>
+<%--                                    <li><a href="#"><span class="glyphicon glyphicon-stats pull-left"></span>&nbsp;User stats </a></li>
+                                    <li class="divider"></li>--%>
+                                    <li> <asp:LinkButton ID="LinkButton1" runat="server" Text="Sign Out" OnClick="Button1_Click">Sign Out</asp:LinkButton></li>
                                 </ul>
                             </li>
                         </ul>

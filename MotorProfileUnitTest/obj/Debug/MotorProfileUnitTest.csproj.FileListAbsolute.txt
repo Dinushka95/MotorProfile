@@ -1,0 +1,11 @@
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileUnitTest\bin\Debug\MotorProfileUnitTest.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileUnitTest\bin\Debug\MotorProfileUnitTest.pdb
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileUnitTest\bin\Debug\MotorProfileLibrary.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileUnitTest\bin\Debug\Dapper.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileUnitTest\bin\Debug\MySql.Data.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileUnitTest\bin\Debug\MotorProfileLibrary.pdb
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileUnitTest\bin\Debug\Dapper.xml
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileUnitTest\bin\Debug\MySql.Data.xml
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileUnitTest\obj\Debug\MotorProfileUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileUnitTest\obj\Debug\MotorProfileUnitTest.dll
+C:\Users\Dinu\Documents\Visual Studio 2015\Projects\MotorProfile\MotorProfileUnitTest\obj\Debug\MotorProfileUnitTest.pdb
